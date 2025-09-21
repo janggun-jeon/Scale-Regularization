@@ -1,25 +1,27 @@
-# RioGNN
+# RioGNN-sr
+ Effects of Scale Regularization in Fraud Detection Graphs
 
-Code for [**Reinforced Neighborhood Selection Guided Multi-Relational Graph Neural Networks**](https://arxiv.org/pdf/2104.07886.pdf).  
+![Image](https://github.com/user-attachments/assets/68c8eb96-e605-4d74-a1f4-00c91544fca6)
 
-[Hao Peng](https://penghao-buaa.github.io/), Ruitong Zhang, [Yingtong Dou](http://ytongdou.com/), Renyu Yang, Jingyi Zhang, [Philip S. Yu](https://www.cs.uic.edu/PSYu/).
+[https://doi.org/10.3390/electronics14183660](https://doi.org/10.3390/electronics14183660)
 
+Electronics 2025, 14(18), 3660 <br>
+ISSN:2079-9292      
+eISSN:2079-9292
 
 ## Repo Structure
 
 The repository is organized as follows:
 - `data/`: dataset folder
-    - `YelpChi.zip`: Data of the dataset Yelp;
     - `Amazon.zip`: Data of the dataset Amazon;
-    - `Mimic.zip`: Data of the dataset Mimic;
 - `log/`: log folder
 - `model/`: model folder
     - `graphsage.py`: model code for vanilla [GraphSAGE](https://github.com/williamleif/graphsage-simple/) model;
-    - `layers.py`: RioGNN layers implementations;
-    - `model.py`: RioGNN model implementations;
+    - `layers.py`: RioGNN-sr layers implementations;
+    - `model.py`: RioGNN-sr model implementations;
 - `RL/`: RL folder
     - `actor_critic.py`: RL algorithm, [Actor-Critic](https://github.com/llSourcell/actor_critic);
-    - `rl_model.py`: RioGNN RL Forest implementations;
+    - `rl_model.py`: RioGNN-sr RL Forest implementations;
 - `utils/`: functions folder
     - `data_process.py`: transfer sparse matrix to adjacency lists;
     - `utils.py`: utility functions for data i/o and model evaluation;
@@ -32,75 +34,58 @@ We build different multi-relational graphs for experiments in two task scenarios
 
 | Dataset  | Task  | Nodes  | Relation  |
 |-------|--------|--------|--------|
-| Yelp  | Fraud Detection | 45,954  | rur, rtr, rsr, homo |
 | Amazon  | Fraud Detection | 11,944  | upu, usu, uvu, homo |
-| MIMIC-III  | Diabetes Diagnosis | 28,522  | vav, vdv, vpv, vmv, homo |
 
 ## Run on your Datasets
 
-To run RioGNN on your datasets, you need to prepare the following data:
+To run RioGNN-sr on your datasets, you need to prepare the following data:
 
-- Multiple-single relation graphs with the same nodes where each graph is stored in `scipy.sparse` matrix format, you can use `sparse_to_adjlist()` in `utils.py` to transfer the sparse matrix into adjacency lists used by RioGNN;
-- A numpy array with node labels. Currently, RioGNN only supports binary classification;
+- Multiple-single relation graphs with the same nodes where each graph is stored in `scipy.sparse` matrix format, you can use `sparse_to_adjlist()` in `utils.py` to transfer the sparse matrix into adjacency lists used by RioGNN-sr;
+- A numpy array with node labels. Currently, RioGNN-sr only supports binary classification;
 - A node feature matrix stored in `scipy.sparse` matrix format. 
 
 
 ## How to Run
 You can download the project and and run the program as follows:
 
-###### 1. The dataset folder `\data` only contains two Fraud datasets, please use the following links to download the Mimic dataset (~700MB);
-
-Google Drive: https://drive.google.com/file/d/1WvYtNSHcvSQr8fzI9ykpgjMBSPwCTW0h/view?usp=sharing
-
-Baidu Cloud: https://pan.baidu.com/s/1iyaOqnkyYGqo1Mdwt4QYnQ Password: `vbwn`
-
+###### 1. Unzip `amazon.zip` in the dataset folder `\data`;
+```bash
+unzip data/amazon.zip
+```
 \* Note that all datasets need to be unzipped in the folder `\data` first;
 ###### 2. Install the required packages using the `requirements.txt`;
 ```bash
 pip3 install -r requirements.txt
 ```
-###### 3. Run `data_process.py` to generate adjacency lists of different dataset used by RioGNN;
+###### 3. Run `data_process.py` to generate adjacency lists of different dataset used by RioGNN-sr;
 ```bash
 python data_process.py
 ```
-###### 4. Run `train.py` to run RioGNN with default settings.
+###### 4. Run `train.py` to run RioGNN-sr with default settings.
 ```bash
-python train.py
+python train.py --embed_rescalied
+```
+###### 4.1. Run `mecro.sh` to run RioGNN-sr with default iteratively.
+```bash
+# '72' is the seed value
+mkdir log/amazon/seed-72
+mkdir log/amazon/seed-72/log
+sh mecro.sh
 ```
 
-\* To run the code, you need to have at least **Python 3.6** or later versions. 
-
-## Important Parameters
-
-- Our model supports both CPU and GPU mode, you can change it through parameter `--use_cuda` and  `--device`:
-- Set the `--data` as `yelp`, `amazon` or `mimic` to change different dataset.
-- Parameter `--num_epochs` is used to set the maximum number of iterative epochs. 
-Note that the model will stop early when reinforcement learning has explored all depths.
-- The default value of parameter `--ALAPHA` is `10`, 
-which means that the accuracy of different depths of reinforcement learning tree will be progressive with 
-0.1, 0.01, 0.001, etc. 
-If you want to conduct more width and depth experiments, please adjust here.
-
-\* For other dataset and parameter settings, please refer to the arg parser in `train.py`. 
-
-
-## Preliminary Work
-
-Our preliminary work, **CA**mouflage-**RE**sistant **G**raph **N**eural **N**etwork 
-**([CARE-GNN](https://github.com/YingtongDou/CARE-GNN))**,
-is a GNN-based fraud detector based on a multi-relation graph equipped with three modules that 
-enhance its performance against camouflaged fraudsters.
-
-
-
+\* To run the code, you need to have **Python 3.10**. 
 
 ## Citation
 If you use our code, please cite the paper below:
 ```bibtex
-@article{peng2021reinforced,
-  title={Reinforced Neighborhood Selection Guided Multi-Relational Graph Neural Networks},
-  author={Peng, Hao and Zhang, Ruitong and Dou, Yingtong and Yang, Renyu and Zhang, Jingyi and Yu, Philip S.},
-  journal={ACM Transactions on Information Systems (TOIS)},
-  year={2021}
+@article{jeon2025effects,
+  title={Effects of Scale Regularization in Fraud Detection Graphs},
+  author={Jeon, Janggun and Ahn, Junho and Kim, Namgi},
+  journal={Electronics},
+  volume={14},
+  number={18},
+  pages={3660},
+  year={2025},
+  publisher={MDPI}
 }
 ```
