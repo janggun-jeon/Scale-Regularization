@@ -1,0 +1,40 @@
+nohup: ignoring input
+
++------------------------------------------------------------------------------------------+
+* Training and testing RIO-GNN *
+* Paper: Reinforced Neighborhood Selection Guided Multi-Relational Graph Neural Networks *
+* Source: https://github.com/safe-graph/RioGNN *
+
++------------------------------------------------------------------------------------------+
+
+Log save path: ./log/amazon/
+CUDA:  False
+Running on:  amazon
+The number of relations:  3
+Width of each relation tree:  [10, 10, 10]
+Height of each relation tree:  [2, 3, 3]
+Model:  RIO, Inter-AGG:  GNN, feat_size:  25, emb_size:  32.
+Traceback (most recent call last):
+  File "/home/workspace/RioGNN2/train.py", line 108, in <module>
+    inter1 = InterAgg(width_rl, height_rl, args.device, args.LR, args.GAMMA, args.stop_num,
+  File "/home/workspace/RioGNN2/model/layers.py", line 57, in __init__
+    self.rl_tree = RLForest(width_rl, height_rl, device, LR, GAMMA, stop_num, len(intra_aggs))
+  File "/home/workspace/RioGNN2/RL/rl_model.py", line 25, in __init__
+    self.actors = [[Actor(1, width_rl[r], device, LR) for j in range(height_rl[r])]
+  File "/home/workspace/RioGNN2/RL/rl_model.py", line 25, in <listcomp>
+    self.actors = [[Actor(1, width_rl[r], device, LR) for j in range(height_rl[r])]
+  File "/home/workspace/RioGNN2/RL/rl_model.py", line 25, in <listcomp>
+    self.actors = [[Actor(1, width_rl[r], device, LR) for j in range(height_rl[r])]
+  File "/home/workspace/RioGNN2/RL/actor_critic.py", line 48, in __init__
+    self.network = PGNetwork(state_dim=self.state_dim, action_dim=self.action_dim).to(self.device)
+  File "/usr/local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1340, in to
+    return self._apply(convert)
+  File "/usr/local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 927, in _apply
+    param_applied = fn(param)
+  File "/usr/local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1326, in convert
+    return t.to(
+  File "/usr/local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 319, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: No CUDA GPUs are available

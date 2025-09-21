@@ -1,0 +1,4062 @@
+nohup: ignoring input
+
++------------------------------------------------------------------------------------------+
+* Training and testing RIO-GNN *
+* Paper: Reinforced Neighborhood Selection Guided Multi-Relational Graph Neural Networks *
+* Source: https://github.com/safe-graph/RioGNN *
+
++------------------------------------------------------------------------------------------+
+
+Log save path: ./log/amazon/
+CUDA:  True
+Running on:  amazon
+The number of relations:  3
+Width of each relation tree:  [10, 10, 10]
+Height of each relation tree:  [2, 3, 3]
+Model:  RIO, Inter-AGG:  GNN, feat_size:  25, emb_size:  128.
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 0                                               
++------------------------------------------------------------------------------------------+
+
+/home/workspace/RioGNN2/train.py:167: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:78.)
+  batch_loss, embed = gnn_model.loss(batch_nodes, Variable(torch.cuda.LongTensor(batch_label))) # gnn_model.loss(batch_nodes, Variable(torch.cuda.LongTensor(batch_label))) #
+Historical maximum AUC:  0
+Thresholds to obtain the historical maximum AUC:  [0, 0, 0]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 2.112534284591675, time: 0.4195983409881592s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.4041
+TEST GNN Accuracy: 0.4847
+TEST GNN Recall: 0.6572
+TEST GNN auc: 0.8161
+TEST GNN ap: 0.4201
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.0643
+TEST Label1 Accuracy: 0.0688
+TEST Label1 Recall: 0.5000
+TEST Label1 auc: 0.3889
+TEST Label1 ap: 0.0523
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.6465
+TRAIN GNN auc: 0.7897
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 1                                               
++------------------------------------------------------------------------------------------+
+
+States:  [array([0.02390265]), array([0.02151318]), array([0.02789493])]
+Thresholds:  [0.1, 0.7000000000000001, 0.6000000000000001]
+Historical maximum AUC:  0.7896817728291916
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.5]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 2.0986571311950684, time: 0.301969051361084s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8144
+TRAIN GNN auc: 0.8198
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 2                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.023162243519571586, 0.021152962697567064, 0.026856652003881654]
+States:  [array([0.02316224]), array([0.02115296]), array([0.02685665])]
+Thresholds:  [0.5, 0.5, 0.7000000000000001]
+Historical maximum AUC:  0.8198474993010212
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.7000000000000001, 0.6000000000000001]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 2.0838940143585205, time: 0.32767605781555176s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8359
+TRAIN GNN auc: 0.8253
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 3                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.005746141932133284, 0.03528298038595132, 0.03226621188828574]
+States:  [array([0.00574614]), array([0.03528298]), array([0.03226621])]
+Thresholds:  [0.8, 0.2, 0.1]
+Historical maximum AUC:  0.8252824010876656
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.7000000000000001]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 2.0689949989318848, time: 0.2970309257507324s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6992
+TEST GNN Accuracy: 0.8743
+TEST GNN Recall: 0.8456
+TEST GNN auc: 0.8544
+TEST GNN ap: 0.7162
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.0643
+TEST Label1 Accuracy: 0.0688
+TEST Label1 Recall: 0.5000
+TEST Label1 auc: 0.4730
+TEST Label1 ap: 0.0587
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8275
+TRAIN GNN auc: 0.8234
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 4                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.024985123943944323, 0.022549489252116847, 0.03749510724077815]
+States:  [array([0.02498512]), array([0.02254949]), array([0.03749511])]
+Thresholds:  [0.6000000000000001, 0.5, 1]
+Historical maximum AUC:  0.8252824010876656
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.7000000000000001]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 2.0539350509643555, time: 0.2615957260131836s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8163
+TRAIN GNN auc: 0.8268
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 5                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.041045659397113216, 0.009859657608493846, 0.0039258707009238916]
+States:  [array([0.04104566]), array([0.00985966]), array([0.00392587])]
+Thresholds:  [0.5, 0.30000000000000004, 0.4]
+Historical maximum AUC:  0.8268335169865522
+Thresholds to obtain the historical maximum AUC:  [0.6000000000000001, 0.5, 1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 2.0391252040863037, time: 0.3051917552947998s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8582
+TRAIN GNN auc: 0.8376
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 6                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.03570120837979726, 0.02584595575389627, 0.0629955290885486]
+States:  [array([0.03570121]), array([0.02584596]), array([0.06299553])]
+Thresholds:  [0.7000000000000001, 0.6000000000000001, 0.9]
+Historical maximum AUC:  0.8375919636640736
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.30000000000000004, 0.4]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 2.0233993530273438, time: 0.29204869270324707s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8547
+TEST GNN Accuracy: 0.9661
+TEST GNN Recall: 0.8245
+TEST GNN auc: 0.8609
+TEST GNN ap: 0.7175
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.3311
+TEST Label1 Accuracy: 0.3737
+TEST Label1 Recall: 0.6129
+TEST Label1 auc: 0.6454
+TEST Label1 ap: 0.0944
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8020
+TRAIN GNN auc: 0.8305
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 7                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.03418417532131067, 0.01759361692807428, 0.02016703081218716]
+States:  [array([0.03418418]), array([0.01759362]), array([0.02016703])]
+Thresholds:  [0.7000000000000001, 0.7000000000000001, 0.4]
+Historical maximum AUC:  0.8375919636640736
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.30000000000000004, 0.4]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 2.01137638092041, time: 0.3125782012939453s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8528
+TRAIN GNN auc: 0.8342
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 8                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.047126881988384786, 0.03415862052178026, 0.05276054387458705]
+States:  [array([0.04712688]), array([0.03415862]), array([0.05276054])]
+Thresholds:  [0.2, 0.8, 0.4]
+Historical maximum AUC:  0.8375919636640736
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.30000000000000004, 0.4]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.9960229396820068, time: 0.31813621520996094s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8655
+TRAIN GNN auc: 0.8398
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 9                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.0500445797080169, 0.040089636346222764, 0.020615016715701043]
+States:  [array([0.05004458]), array([0.04008964]), array([0.02061502])]
+Thresholds:  [0.8, 0.4, 0.2]
+Historical maximum AUC:  0.8397988860198784
+Thresholds to obtain the historical maximum AUC:  [0.2, 0.8, 0.4]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.9724730253219604, time: 0.322551965713501s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8394
+TEST GNN Accuracy: 0.9537
+TEST GNN Recall: 0.8828
+TEST GNN auc: 0.8667
+TEST GNN ap: 0.7777
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.6628
+TEST Label1 Accuracy: 0.8453
+TEST Label1 Recall: 0.8247
+TEST Label1 auc: 0.7925
+TEST Label1 ap: 0.2367
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8563
+TRAIN GNN auc: 0.8360
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 10                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.018223235281845912, 0.046880374285731684, 0.020600853661633285]
+States:  [array([0.01822324]), array([0.04688037]), array([0.02060085])]
+Thresholds:  [0.1, 0.5, 0.8]
+Historical maximum AUC:  0.8397988860198784
+Thresholds to obtain the historical maximum AUC:  [0.2, 0.8, 0.4]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.9608194828033447, time: 0.28861522674560547s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8346
+TRAIN GNN auc: 0.8404
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 11                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.059914495465072395, 0.02427068632923226, 0.010250644981738093]
+States:  [array([0.0599145]), array([0.02427069]), array([0.01025064])]
+Thresholds:  [0.9, 0.30000000000000004, 0.8]
+Historical maximum AUC:  0.8403721170556278
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.5, 0.8]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.9482965469360352, time: 0.29363083839416504s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8289
+TRAIN GNN auc: 0.8343
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 12                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.008598289678324917, 0.028200794754921207, 0.039512230964844804]
+States:  [array([0.00859829]), array([0.02820079]), array([0.03951223])]
+Thresholds:  [0.9, 0.30000000000000004, 0.2]
+Historical maximum AUC:  0.8403721170556278
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.5, 0.8]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.9344274997711182, time: 0.3075697422027588s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8523
+TEST GNN Accuracy: 0.9581
+TEST GNN Recall: 0.8908
+TEST GNN auc: 0.8699
+TEST GNN ap: 0.7906
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8599
+TEST Label1 Accuracy: 0.9660
+TEST Label1 Recall: 0.8405
+TEST Label1 auc: 0.8443
+TEST Label1 ap: 0.6594
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8648
+TRAIN GNN auc: 0.8384
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 13                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.07065305598052263, 0.018088216475462125, 0.03849626781953881]
+States:  [array([0.07065306]), array([0.01808822]), array([0.03849627])]
+Thresholds:  [0.9, 0.1, 0.30000000000000004]
+Historical maximum AUC:  0.8403721170556278
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.5, 0.8]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.9126243591308594, time: 0.2823808193206787s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8663
+TRAIN GNN auc: 0.8386
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 14                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.07401893868574942, 0.01749086199268663, 0.010207062591475673]
+States:  [array([0.07401894]), array([0.01749086]), array([0.01020706])]
+Thresholds:  [0.12, 0.9, 0.4]
+Historical maximum AUC:  0.8403721170556278
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.5, 0.8]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.89152193069458, time: 0.27381134033203125s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8723
+TRAIN GNN auc: 0.8470
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 15                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.07752398196374699, 0.007067536277687632, 0.01463077094467242]
+States:  [array([0.07752398]), array([0.00706754]), array([0.01463077])]
+Thresholds:  [0.06, 0.1, 0.8]
+Historical maximum AUC:  0.8470117291361721
+Thresholds to obtain the historical maximum AUC:  [0.12, 0.9, 0.4]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.8825535774230957, time: 0.32492661476135254s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8662
+TEST GNN Accuracy: 0.9633
+TEST GNN Recall: 0.8938
+TEST GNN auc: 0.8793
+TEST GNN ap: 0.8025
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8668
+TEST Label1 Accuracy: 0.9713
+TEST Label1 Recall: 0.8112
+TEST Label1 auc: 0.8565
+TEST Label1 ap: 0.7335
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8693
+TRAIN GNN auc: 0.8468
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 16                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.013607963432212263, 0.05706469680441133, 0.01819256395257196]
+States:  [array([0.01360796]), array([0.0570647]), array([0.01819256])]
+Thresholds:  [0.13, 0.4, 0.4]
+Historical maximum AUC:  0.8470117291361721
+Thresholds to obtain the historical maximum AUC:  [0.12, 0.9, 0.4]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.8571417331695557, time: 0.2833089828491211s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8741
+TRAIN GNN auc: 0.8532
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 17                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.008361197021415148, 0.008266553047742861, 0.03535636572105537]
+States:  [array([0.0083612]), array([0.00826655]), array([0.03535637])]
+Thresholds:  [0.13, 0.4, 0.2]
+Historical maximum AUC:  0.8531822717080846
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.4, 0.4]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.841504693031311, time: 0.2886772155761719s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8745
+TRAIN GNN auc: 0.8616
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 18                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.01670306234787138, 0.02416616490756566, 0.017876159925312513]
+States:  [array([0.01670306]), array([0.02416616]), array([0.01787616])]
+Thresholds:  [0.08, 0.2, 0.1]
+Historical maximum AUC:  0.861555967633176
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.8254070281982422, time: 0.2860448360443115s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8656
+TEST GNN Accuracy: 0.9625
+TEST GNN Recall: 0.8997
+TEST GNN auc: 0.8980
+TEST GNN ap: 0.8217
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8720
+TEST Label1 Accuracy: 0.9721
+TEST Label1 Recall: 0.8184
+TEST Label1 auc: 0.8611
+TEST Label1 ap: 0.7565
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8715
+TRAIN GNN auc: 0.8736
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 19                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.01844560585844631, 0.026125576129881246, 0.01031176259418118]
+States:  [array([0.01844561]), array([0.02612558]), array([0.01031176])]
+Thresholds:  [0.13, 1, 0.7000000000000001]
+Historical maximum AUC:  0.8736150628532584
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.2, 0.1]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.8100730180740356, time: 0.2565004825592041s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8683
+TRAIN GNN auc: 0.8961
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 20                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.013253165437056432, 0.01880386517972733, 0.005846014075699328]
+States:  [array([0.01325317]), array([0.01880387]), array([0.00584601])]
+Thresholds:  [0.09, 0.1, 0.2]
+Historical maximum AUC:  0.8960509075758323
+Thresholds to obtain the historical maximum AUC:  [0.13, 1, 0.7000000000000001]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.7990186214447021, time: 0.3499939441680908s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8762
+TRAIN GNN auc: 0.9257
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 21                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.022398744512416812, 0.07629255384502001, 0.027627449238227686]
+States:  [array([0.02239874]), array([0.07629255]), array([0.02762745])]
+Thresholds:  [0.07, 0.6000000000000001, 1]
+Historical maximum AUC:  0.9256896589532315
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.1, 0.2]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.7830290794372559, time: 0.2642078399658203s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8855
+TEST GNN Accuracy: 0.9697
+TEST GNN Recall: 0.8980
+TEST GNN auc: 0.9601
+TEST GNN ap: 0.8489
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8862
+TEST Label1 Accuracy: 0.9739
+TEST Label1 Recall: 0.8461
+TEST Label1 auc: 0.8633
+TEST Label1 ap: 0.7665
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8685
+TRAIN GNN auc: 0.9405
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 22                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.01713848932029839, 0.01795528858423873, 0.010872705908493886]
+States:  [array([0.01713849]), array([0.01795529]), array([0.01087271])]
+Thresholds:  [0.08, 0.8, 1]
+Historical maximum AUC:  0.940539529299541
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.6000000000000001, 1]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.767259120941162, time: 0.3102273941040039s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8678
+TRAIN GNN auc: 0.9421
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 23                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.014467531002320797, 0.04865602064014567, 0.05149475112838071]
+States:  [array([0.01446753]), array([0.04865602]), array([0.05149475])]
+Thresholds:  [0.11000000000000001, 0.1, 0.7000000000000001]
+Historical maximum AUC:  0.9421259367684708
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.8, 1]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.7554821968078613, time: 0.31976795196533203s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8744
+TRAIN GNN auc: 0.9391
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 24                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.01686541439285354, 0.06580891796539183, 0.05142177939686282]
+States:  [array([0.01686541]), array([0.06580892]), array([0.05142178])]
+Thresholds:  [0.11000000000000001, 0.9, 0.8]
+Historical maximum AUC:  0.9421259367684708
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.8, 1]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.7416605949401855, time: 0.2790801525115967s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8898
+TEST GNN Accuracy: 0.9710
+TEST GNN Recall: 0.9015
+TEST GNN auc: 0.9630
+TEST GNN ap: 0.8601
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8852
+TEST Label1 Accuracy: 0.9714
+TEST Label1 Recall: 0.8732
+TEST Label1 auc: 0.8647
+TEST Label1 ap: 0.7716
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8709
+TRAIN GNN auc: 0.9417
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 25                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.024496711780327363, 0.024957085059965647, 0.028222416226939023]
+States:  [array([0.02449671]), array([0.02495709]), array([0.02822242])]
+Thresholds:  [0.08, 0.5, 0.30000000000000004]
+Historical maximum AUC:  0.9421259367684708
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.8, 1]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.7290239334106445, time: 0.7451603412628174s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8787
+TRAIN GNN auc: 0.9414
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 26                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.025818981354776428, 0.07981951062075493, 0.03455714832769601]
+States:  [array([0.02581898]), array([0.07981951]), array([0.03455715])]
+Thresholds:  [0.11000000000000001, 0.1, 0.5]
+Historical maximum AUC:  0.9421259367684708
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.8, 1]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.718555212020874, time: 0.2953956127166748s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8819
+TRAIN GNN auc: 0.9422
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 27                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.019530668273745548, 0.05484757003311429, 0.017178405984580744]
+States:  [array([0.01953067]), array([0.05484757]), array([0.01717841])]
+Thresholds:  [0.14, 1, 0.4]
+Historical maximum AUC:  0.9421663678875495
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.1, 0.5]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.7126805782318115, time: 0.26979875564575195s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.9003
+TEST GNN Accuracy: 0.9740
+TEST GNN Recall: 0.9049
+TEST GNN auc: 0.9537
+TEST GNN ap: 0.8496
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8540
+TEST Label1 Accuracy: 0.9598
+TEST Label1 Recall: 0.8816
+TEST Label1 auc: 0.8659
+TEST Label1 ap: 0.7751
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8801
+TRAIN GNN auc: 0.9445
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 28                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.02861054318983185, 0.03201772363558208, 0.02330572031965253]
+States:  [array([0.02861054]), array([0.03201772]), array([0.02330572])]
+Thresholds:  [0.09, 0.4, 0.2]
+Historical maximum AUC:  0.944460662576956
+Thresholds to obtain the historical maximum AUC:  [0.14, 1, 0.4]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.6982769966125488, time: 0.329038143157959s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8843
+TRAIN GNN auc: 0.9446
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 29                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.03799375202805401, 0.09833194433832795, 0.021976257093497504]
+States:  [array([0.03799375]), array([0.09833194]), array([0.02197626])]
+Thresholds:  [0.08, 0.8, 0.8]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.6838964223861694, time: 0.2843151092529297s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8741
+TRAIN GNN auc: 0.9345
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 30                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.025412874144916955, 0.059656402002907255, 0.014755429843168329]
+States:  [array([0.02541287]), array([0.0596564]), array([0.01475543])]
+Thresholds:  [0.07, 0.30000000000000004, 0.2]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.6725151538848877, time: 0.3321263790130615s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8860
+TEST GNN Accuracy: 0.9693
+TEST GNN Recall: 0.9055
+TEST GNN auc: 0.9568
+TEST GNN ap: 0.8551
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8239
+TEST Label1 Accuracy: 0.9468
+TEST Label1 Recall: 0.8854
+TEST Label1 auc: 0.8671
+TEST Label1 ap: 0.7782
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8809
+TRAIN GNN auc: 0.9411
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 31                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.023815227580803726, 0.08631253872009172, 0.03894229796191279]
+States:  [array([0.02381523]), array([0.08631254]), array([0.0389423])]
+Thresholds:  [0.13, 0.9, 0.9]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.6651649475097656, time: 0.278841495513916s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8720
+TRAIN GNN auc: 0.9317
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 32                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.021951844971692815, 0.06107917364073622, 0.0166031995073019]
+States:  [array([0.02195184]), array([0.06107917]), array([0.0166032])]
+Thresholds:  [0.11000000000000001, 1, 0.9]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.6583625078201294, time: 0.7335114479064941s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8671
+TRAIN GNN auc: 0.9356
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 33                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.041748354393945204, 0.10070954088775919, 0.050051898257296674]
+States:  [array([0.04174835]), array([0.10070954]), array([0.0500519])]
+Thresholds:  [0.11000000000000001, 0.4, 0.5]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.6556898355484009, time: 0.32787513732910156s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.5540
+TEST GNN Accuracy: 0.6967
+TEST GNN Recall: 0.8157
+TEST GNN auc: 0.9550
+TEST GNN ap: 0.8493
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.7979
+TEST Label1 Accuracy: 0.9347
+TEST Label1 Recall: 0.8810
+TEST Label1 auc: 0.8681
+TEST Label1 ap: 0.7811
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8036
+TRAIN GNN auc: 0.9421
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 34                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.0370376274781131, 0.11416348126802757, 0.05135319651259624]
+States:  [array([0.03703763]), array([0.11416348]), array([0.0513532])]
+Thresholds:  [0.08, 0.9, 0.9]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.6358387470245361, time: 0.290698766708374s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8371
+TRAIN GNN auc: 0.9320
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 35                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.0384254590136264, 0.07583010135338202, 0.03139625016331821]
+States:  [array([0.03842546]), array([0.0758301]), array([0.03139625])]
+Thresholds:  [0.1, 0.9, 0.5]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.635972261428833, time: 0.3310356140136719s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8133
+TRAIN GNN auc: 0.9318
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 36                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.029154106537027963, 0.11015907826203902, 0.05413403593645177]
+States:  [array([0.02915411]), array([0.11015908]), array([0.05413404])]
+Thresholds:  [0.1, 0.9, 0.5]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.6147197484970093, time: 0.3333876132965088s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8120
+TEST GNN Accuracy: 0.9404
+TEST GNN Recall: 0.8902
+TEST GNN auc: 0.9478
+TEST GNN ap: 0.8278
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.7901
+TEST Label1 Accuracy: 0.9307
+TEST Label1 Recall: 0.8807
+TEST Label1 auc: 0.8691
+TEST Label1 ap: 0.7841
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8645
+TRAIN GNN auc: 0.9316
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 37                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.03682167269662769, 0.1133244298217008, 0.03393185058604029]
+States:  [array([0.03682167]), array([0.11332443]), array([0.03393185])]
+Thresholds:  [0.06, 0.45000000000000007, 1]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.6125900745391846, time: 0.33426690101623535s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8788
+TRAIN GNN auc: 0.9380
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 38                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.03799957301500008, 0.11649563150485961, 0.035216119963555566]
+States:  [array([0.03799957]), array([0.11649563]), array([0.03521612])]
+Thresholds:  [0.12, 0.39, 0.2]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.594706654548645, time: 0.31886744499206543s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8112
+TRAIN GNN auc: 0.9372
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 39                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.02505951568817374, 0.09066028969856513, 0.06675073465693504]
+States:  [array([0.02505952]), array([0.09066029]), array([0.06675073])]
+Thresholds:  [0.11000000000000001, 0.42000000000000004, 0.9]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.590219497680664, time: 0.6870660781860352s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8517
+TEST GNN Accuracy: 0.9565
+TEST GNN Recall: 0.9038
+TEST GNN auc: 0.9531
+TEST GNN ap: 0.8323
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.7863
+TEST Label1 Accuracy: 0.9287
+TEST Label1 Recall: 0.8797
+TEST Label1 auc: 0.8700
+TEST Label1 ap: 0.7864
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8762
+TRAIN GNN auc: 0.9353
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 40                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.048743665055833524, 0.09050007218655427, 0.024278583086152508]
+States:  [array([0.04874367]), array([0.09050007]), array([0.02427858])]
+Thresholds:  [0.08, 0.38000000000000006, 0.6000000000000001]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.5903615951538086, time: 0.3049275875091553s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8170
+TRAIN GNN auc: 0.9365
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 41                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.04637379606137273, 0.0953696696637238, 0.061391246789606266]
+States:  [array([0.0463738]), array([0.09536967]), array([0.06139125])]
+Thresholds:  [0.11000000000000001, 0.39, 1]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.5789000988006592, time: 0.28632402420043945s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8792
+TRAIN GNN auc: 0.9391
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 42                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.03479726414772726, 0.09600352698822875, 0.045659121512663284]
+States:  [array([0.03479726]), array([0.09600353]), array([0.04565912])]
+Thresholds:  [0.15000000000000002, 0.41000000000000003, 0.30000000000000004]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.5742963552474976, time: 0.3015627861022949s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8857
+TEST GNN Accuracy: 0.9693
+TEST GNN Recall: 0.9036
+TEST GNN auc: 0.9571
+TEST GNN ap: 0.8440
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.7916
+TEST Label1 Accuracy: 0.9314
+TEST Label1 Recall: 0.8811
+TEST Label1 auc: 0.8708
+TEST Label1 ap: 0.7887
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8822
+TRAIN GNN auc: 0.9389
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 43                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.048909865287888765, 0.09954311301698471, 0.07271735493368775]
+States:  [array([0.04890987]), array([0.09954311]), array([0.07271735])]
+Thresholds:  [0.06, 0.43000000000000005, 0.8]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.5564689636230469, time: 0.29581260681152344s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8803
+TRAIN GNN auc: 0.9355
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 44                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.06708410246694674, 0.10369613077133769, 0.035784210946143785]
+States:  [array([0.0670841]), array([0.10369613]), array([0.03578421])]
+Thresholds:  [0.13, 0.45000000000000007, 1]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.5598725080490112, time: 0.31067800521850586s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8762
+TRAIN GNN auc: 0.9387
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 45                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.02936934099774319, 0.10773611603475161, 0.05849054500339664]
+States:  [array([0.02936934]), array([0.10773612]), array([0.05849055])]
+Thresholds:  [0.09, 0.37000000000000005, 0.8]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.5439621210098267, time: 0.29920434951782227s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6872
+TEST GNN Accuracy: 0.8588
+TEST GNN Recall: 0.8609
+TEST GNN auc: 0.9518
+TEST GNN ap: 0.8400
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8068
+TEST Label1 Accuracy: 0.9386
+TEST Label1 Recall: 0.8850
+TEST Label1 auc: 0.8716
+TEST Label1 ap: 0.7910
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8496
+TRAIN GNN auc: 0.9370
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 46                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.06161284524475297, 0.1117420898887397, 0.0774153002861949]
+States:  [array([0.06161285]), array([0.11174209]), array([0.0774153])]
+Thresholds:  [0.14, 0.37000000000000005, 0.6000000000000001]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.5399508476257324, time: 0.3008589744567871s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8788
+TRAIN GNN auc: 0.9390
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 47                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.04385873403383962, 0.10937575209603088, 0.061331390876036423]
+States:  [array([0.04385873]), array([0.10937575]), array([0.06133139])]
+Thresholds:  [0.06, 0.4, 1]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.5341237783432007, time: 0.6929130554199219s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8810
+TRAIN GNN auc: 0.9420
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 48                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.06877143218560902, 0.11206835903513028, 0.05367943114296852]
+States:  [array([0.06877143]), array([0.11206836]), array([0.05367943])]
+Thresholds:  [0.08, 0.41000000000000003, 0.4]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.5238429307937622, time: 0.29960155487060547s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.5930
+TEST GNN Accuracy: 0.7550
+TEST GNN Recall: 0.8251
+TEST GNN auc: 0.9509
+TEST GNN ap: 0.8409
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8212
+TEST Label1 Accuracy: 0.9452
+TEST Label1 Recall: 0.8877
+TEST Label1 auc: 0.8723
+TEST Label1 ap: 0.7929
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8155
+TRAIN GNN auc: 0.9389
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 49                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.03227759147582411, 0.11677765241909645, 0.08220574536114288]
+States:  [array([0.03227759]), array([0.11677765]), array([0.08220575])]
+Thresholds:  [0.15000000000000002, 0.37000000000000005, 0.6000000000000001]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.5120453834533691, time: 0.2802426815032959s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8106
+TRAIN GNN auc: 0.9366
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 50                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.04215524112066579, 0.1202400197969869, 0.04671908062944124]
+States:  [array([0.04215524]), array([0.12024002]), array([0.04671908])]
+Thresholds:  [0.1, 0.36000000000000004, 1]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.5041121244430542, time: 0.30037450790405273s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8796
+TRAIN GNN auc: 0.9427
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 51                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.07895592267535609, 0.11983079627460845, 0.057421974343713704]
+States:  [array([0.07895592]), array([0.1198308]), array([0.05742197])]
+Thresholds:  [0.07, 0.44000000000000006, 0.2]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.516542673110962, time: 0.3041269779205322s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8842
+TEST GNN Accuracy: 0.9686
+TEST GNN Recall: 0.9049
+TEST GNN auc: 0.9557
+TEST GNN ap: 0.8473
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8338
+TEST Label1 Accuracy: 0.9509
+TEST Label1 Recall: 0.8878
+TEST Label1 auc: 0.8730
+TEST Label1 ap: 0.7944
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8819
+TRAIN GNN auc: 0.9400
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 52                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.05381090871855348, 0.12168444049097425, 0.08707291490970426]
+States:  [array([0.05381091]), array([0.12168444]), array([0.08707291])]
+Thresholds:  [0.1, 0.39, 1]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.5110890865325928, time: 0.2921638488769531s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8797
+TRAIN GNN auc: 0.9435
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 53                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.03954236115273022, 0.12990136036630462, 0.03539225308566221]
+States:  [array([0.03954236]), array([0.12990136]), array([0.03539225])]
+Thresholds:  [0.07, 0.43000000000000005, 1]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.4979251623153687, time: 0.3149902820587158s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8787
+TRAIN GNN auc: 0.9444
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 54                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.05604164660693648, 0.1288515542320355, 0.09029571016027678]
+States:  [array([0.05604165]), array([0.12885155]), array([0.09029571])]
+Thresholds:  [0.14, 0.41000000000000003, 0.5]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.489520788192749, time: 0.7216734886169434s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8776
+TEST GNN Accuracy: 0.9665
+TEST GNN Recall: 0.9027
+TEST GNN auc: 0.9565
+TEST GNN ap: 0.8497
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8434
+TEST Label1 Accuracy: 0.9547
+TEST Label1 Recall: 0.8898
+TEST Label1 auc: 0.8736
+TEST Label1 ap: 0.7958
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8784
+TRAIN GNN auc: 0.9420
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 55                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.04115192224222232, 0.13426790477480124, 0.09189966789225518]
+States:  [array([0.04115192]), array([0.1342679]), array([0.09189967])]
+Thresholds:  [0.07, 0.36000000000000004, 0.1]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.4676443338394165, time: 0.6874897480010986s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8804
+TRAIN GNN auc: 0.9439
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 56                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.08125397339761854, 0.13539101732927755, 0.05651520104436365]
+States:  [array([0.08125397]), array([0.13539102]), array([0.0565152])]
+Thresholds:  [0.07, 0.42000000000000004, 0.7000000000000001]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.477048397064209, time: 0.2873063087463379s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8741
+TRAIN GNN auc: 0.9432
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 57                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.04273821198950808, 0.13402549494674784, 0.026733927055344765]
+States:  [array([0.04273821]), array([0.13402549]), array([0.02673393])]
+Thresholds:  [0.15000000000000002, 0.44000000000000006, 0.30000000000000004]
+Historical maximum AUC:  0.9445881233930343
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.4672420024871826, time: 0.3056766986846924s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8768
+TEST GNN Accuracy: 0.9662
+TEST GNN Recall: 0.9017
+TEST GNN auc: 0.9635
+TEST GNN ap: 0.8614
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8498
+TEST Label1 Accuracy: 0.9572
+TEST Label1 Recall: 0.8912
+TEST Label1 auc: 0.8740
+TEST Label1 ap: 0.7969
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8757
+TRAIN GNN auc: 0.9456
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 58                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.04352730660709181, 0.1413027739913056, 0.07002927452050359]
+States:  [array([0.04352731]), array([0.14130277]), array([0.07002927])]
+Thresholds:  [0.1, 0.37000000000000005, 0.7000000000000001]
+Historical maximum AUC:  0.9456167184733208
+Thresholds to obtain the historical maximum AUC:  [0.15000000000000002, 0.44000000000000006, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.4496744871139526, time: 0.2912628650665283s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8736
+TRAIN GNN auc: 0.9479
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 59                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.09214732764895124, 0.14529331728195813, 0.05036511713929578]
+States:  [array([0.09214733]), array([0.14529332]), array([0.05036512])]
+Thresholds:  [0.1, 0.37000000000000005, 0.2]
+Historical maximum AUC:  0.9479421930935426
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.37000000000000005, 0.7000000000000001]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.451087474822998, time: 0.30498361587524414s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8755
+TRAIN GNN auc: 0.9468
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 60                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.06258382762203077, 0.14212690881004691, 0.072506233012225]
+States:  [array([0.06258383]), array([0.14212691]), array([0.07250623])]
+Thresholds:  [0.15000000000000002, 0.36000000000000004, 0.9]
+Historical maximum AUC:  0.9479421930935426
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.37000000000000005, 0.7000000000000001]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.4466967582702637, time: 0.2847733497619629s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8567
+TEST GNN Accuracy: 0.9590
+TEST GNN Recall: 0.8995
+TEST GNN auc: 0.9678
+TEST GNN ap: 0.8619
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8524
+TEST Label1 Accuracy: 0.9581
+TEST Label1 Recall: 0.8917
+TEST Label1 auc: 0.8744
+TEST Label1 ap: 0.7976
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8717
+TRAIN GNN auc: 0.9490
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 61                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.06363957194124928, 0.1447038383807056, 0.04147641123217958]
+States:  [array([0.06363957]), array([0.14470384]), array([0.04147641])]
+Thresholds:  [0.09, 0.41000000000000003, 0.2]
+Historical maximum AUC:  0.9489964859190062
+Thresholds to obtain the historical maximum AUC:  [0.15000000000000002, 0.36000000000000004, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.443200945854187, time: 0.29538702964782715s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8760
+TRAIN GNN auc: 0.9493
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 62                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.0969277391982302, 0.14650566974515805, 0.09257787949267887]
+States:  [array([0.09692774]), array([0.14650567]), array([0.09257788])]
+Thresholds:  [0.1, 0.41000000000000003, 0.9]
+Historical maximum AUC:  0.9493329550625245
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.41000000000000003, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.432397484779358, time: 0.6652977466583252s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8740
+TRAIN GNN auc: 0.9487
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 63                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.059857709741514546, 0.15321345307529047, 0.04300966086964892]
+States:  [array([0.05985771]), array([0.15321345]), array([0.04300966])]
+Thresholds:  [0.07, 0.36000000000000004, 0.1]
+Historical maximum AUC:  0.9493329550625245
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.41000000000000003, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.4332195520401, time: 0.305513858795166s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8753
+TEST GNN Accuracy: 0.9658
+TEST GNN Recall: 0.9014
+TEST GNN auc: 0.9633
+TEST GNN ap: 0.8559
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8535
+TEST Label1 Accuracy: 0.9586
+TEST Label1 Recall: 0.8911
+TEST Label1 auc: 0.8749
+TEST Label1 ap: 0.7983
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8767
+TRAIN GNN auc: 0.9498
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 64                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.06679675840563032, 0.15568584981875264, 0.09539601311791439]
+States:  [array([0.06679676]), array([0.15568585]), array([0.09539601])]
+Thresholds:  [0.09, 0.4, 1]
+Historical maximum AUC:  0.9498290928627425
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.36000000000000004, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.4279217720031738, time: 0.2789616584777832s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8756
+TRAIN GNN auc: 0.9509
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 65                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.04888642077785078, 0.15377050918270113, 0.031129975864718877]
+States:  [array([0.04888642]), array([0.15377051]), array([0.03112998])]
+Thresholds:  [0.1, 0.43000000000000005, 0.8]
+Historical maximum AUC:  0.9509238168072848
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.4184324741363525, time: 0.3167850971221924s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8751
+TRAIN GNN auc: 0.9484
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 66                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.06271721651380224, 0.15963659095918165, 0.10862282953411714]
+States:  [array([0.06271722]), array([0.15963659]), array([0.10862283])]
+Thresholds:  [0.14, 0.36000000000000004, 0.2]
+Historical maximum AUC:  0.9509238168072848
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.4222164154052734, time: 0.309009313583374s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8782
+TEST GNN Accuracy: 0.9669
+TEST GNN Recall: 0.9013
+TEST GNN auc: 0.9632
+TEST GNN ap: 0.8563
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8534
+TEST Label1 Accuracy: 0.9586
+TEST Label1 Recall: 0.8911
+TEST Label1 auc: 0.8752
+TEST Label1 ap: 0.7989
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8758
+TRAIN GNN auc: 0.9494
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 67                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.06991804833103994, 0.16474888580498287, 0.08804850783307072]
+States:  [array([0.06991805]), array([0.16474889]), array([0.08804851])]
+Thresholds:  [0.07, 0.44000000000000006, 0.9]
+Historical maximum AUC:  0.9509238168072848
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.4025312662124634, time: 0.2917654514312744s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8760
+TRAIN GNN auc: 0.9490
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 68                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.09901135929585816, 0.16097189352523805, 0.04672621039791674]
+States:  [array([0.09901136]), array([0.16097189]), array([0.04672621])]
+Thresholds:  [0.14, 0.36000000000000004, 1]
+Historical maximum AUC:  0.9509238168072848
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.4, 1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3998998403549194, time: 0.3066525459289551s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8760
+TRAIN GNN auc: 0.9524
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 69                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.05186884839074561, 0.17051927938514658, 0.10232854594523708]
+States:  [array([0.05186885]), array([0.17051928]), array([0.10232855])]
+Thresholds:  [0.07, 0.44000000000000006, 1]
+Historical maximum AUC:  0.952371113815656
+Thresholds to obtain the historical maximum AUC:  [0.14, 0.36000000000000004, 1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.4081203937530518, time: 0.6966681480407715s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8650
+TEST GNN Accuracy: 0.9622
+TEST GNN Recall: 0.8987
+TEST GNN auc: 0.9665
+TEST GNN ap: 0.8581
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8534
+TEST Label1 Accuracy: 0.9586
+TEST Label1 Recall: 0.8911
+TEST Label1 auc: 0.8756
+TEST Label1 ap: 0.7995
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8765
+TRAIN GNN auc: 0.9532
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 70                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1018852568147536, 0.16567568241548322, 0.1145124657744741]
+States:  [array([0.10188526]), array([0.16567568]), array([0.11451247])]
+Thresholds:  [0.13, 0.42000000000000004, 1]
+Historical maximum AUC:  0.9531930990247192
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.44000000000000006, 1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3970186710357666, time: 0.7162590026855469s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8764
+TRAIN GNN auc: 0.9527
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 71                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.05335273664747447, 0.17538482531867405, 0.11597968618718076]
+States:  [array([0.05335274]), array([0.17538483]), array([0.11597969])]
+Thresholds:  [0.14, 0.37000000000000005, 1]
+Historical maximum AUC:  0.9531930990247192
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.44000000000000006, 1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3876678943634033, time: 0.3051028251647949s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8743
+TRAIN GNN auc: 0.9532
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 72                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.09845579408815366, 0.17610223310155523, 0.11744710398881894]
+States:  [array([0.09845579]), array([0.17610223]), array([0.1174471])]
+Thresholds:  [0.14, 0.43000000000000005, 0.99]
+Historical maximum AUC:  0.953241410785652
+Thresholds to obtain the historical maximum AUC:  [0.14, 0.37000000000000005, 1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3910562992095947, time: 0.2939331531524658s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8621
+TEST GNN Accuracy: 0.9611
+TEST GNN Recall: 0.8989
+TEST GNN auc: 0.9680
+TEST GNN ap: 0.8612
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8535
+TEST Label1 Accuracy: 0.9586
+TEST Label1 Recall: 0.8911
+TEST Label1 auc: 0.8760
+TEST Label1 ap: 0.8001
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8756
+TRAIN GNN auc: 0.9538
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 73                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.10614906212609851, 0.17346206293067262, 0.118913527975249]
+States:  [array([0.10614906]), array([0.17346206]), array([0.11891353])]
+Thresholds:  [0.08, 0.45000000000000007, 1]
+Historical maximum AUC:  0.9538451364790115
+Thresholds to obtain the historical maximum AUC:  [0.14, 0.43000000000000005, 0.99]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3863344192504883, time: 0.3206000328063965s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8760
+TRAIN GNN auc: 0.9553
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 74                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.10757381161058953, 0.18149892557909278, 0.11940006336928466]
+States:  [array([0.10757381]), array([0.18149893]), array([0.11940006])]
+Thresholds:  [0.15000000000000002, 0.4, 1]
+Historical maximum AUC:  0.955339374701906
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.45000000000000007, 1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3723034858703613, time: 0.3085463047027588s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8757
+TRAIN GNN auc: 0.9541
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 75                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.06396894567897396, 0.18549118250117652, 0.1218949629719842]
+States:  [array([0.06396895]), array([0.18549118]), array([0.12189496])]
+Thresholds:  [0.13, 0.4, 1]
+Historical maximum AUC:  0.955339374701906
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.45000000000000007, 1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3766472339630127, time: 0.29375147819519043s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8611
+TEST GNN Accuracy: 0.9607
+TEST GNN Recall: 0.8996
+TEST GNN auc: 0.9673
+TEST GNN ap: 0.8607
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8582
+TEST Label1 Accuracy: 0.9604
+TEST Label1 Recall: 0.8920
+TEST Label1 auc: 0.8764
+TEST Label1 ap: 0.8007
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8756
+TRAIN GNN auc: 0.9538
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 76                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.11856159356355109, 0.1828691455980863, 0.12341001696532872]
+States:  [array([0.11856159]), array([0.18286915]), array([0.12341002])]
+Thresholds:  [0.1, 0.4, 1]
+Historical maximum AUC:  0.955339374701906
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.45000000000000007, 1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3548169136047363, time: 0.30969858169555664s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8736
+TRAIN GNN auc: 0.9543
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 77                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.10514260200868907, 0.18497026087616755, 0.12491123464860356]
+States:  [array([0.1051426]), array([0.18497026]), array([0.12491123])]
+Thresholds:  [0.12, 0.44900000000000007, 0.96]
+Historical maximum AUC:  0.955339374701906
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.45000000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3588415384292603, time: 0.6913955211639404s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8732
+TRAIN GNN auc: 0.9531
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 78                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.0811755176715717, 0.18709992246767462, 0.12639590176425797]
+States:  [array([0.08117552]), array([0.18709992]), array([0.1263959])]
+Thresholds:  [0.15000000000000002, 0.45300000000000007, 1]
+Historical maximum AUC:  0.955339374701906
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.45000000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.350252389907837, time: 0.31155896186828613s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8532
+TEST GNN Accuracy: 0.9573
+TEST GNN Recall: 0.9015
+TEST GNN auc: 0.9681
+TEST GNN ap: 0.8611
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8625
+TEST Label1 Accuracy: 0.9619
+TEST Label1 Recall: 0.8929
+TEST Label1 auc: 0.8768
+TEST Label1 ap: 0.8013
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8735
+TRAIN GNN auc: 0.9550
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 79                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.09959380076221974, 0.19405912125814723, 0.12279097913609147]
+States:  [array([0.0995938]), array([0.19405912]), array([0.12279098])]
+Thresholds:  [0.15000000000000002, 0.44600000000000006, 0.98]
+Historical maximum AUC:  0.955339374701906
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.45000000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3608604669570923, time: 0.31046199798583984s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8753
+TRAIN GNN auc: 0.9539
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 80                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.12462166166696392, 0.196361699681816, 0.1294191643634988]
+States:  [array([0.12462166]), array([0.1963617]), array([0.12941916])]
+Thresholds:  [0.08, 0.45300000000000007, 1]
+Historical maximum AUC:  0.955339374701906
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.45000000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.355783224105835, time: 0.31240320205688477s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8758
+TRAIN GNN auc: 0.9565
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 81                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.12611405191991032, 0.19778921385379955, 0.1280547713763334]
+States:  [array([0.12611405]), array([0.19778921]), array([0.12805477])]
+Thresholds:  [0.14, 0.45500000000000007, 0.96]
+Historical maximum AUC:  0.9564954305982709
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.45300000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3367129564285278, time: 0.30919790267944336s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8602
+TEST GNN Accuracy: 0.9604
+TEST GNN Recall: 0.8994
+TEST GNN auc: 0.9680
+TEST GNN ap: 0.8623
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8659
+TEST Label1 Accuracy: 0.9632
+TEST Label1 Recall: 0.8935
+TEST Label1 auc: 0.8773
+TEST Label1 ap: 0.8018
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8758
+TRAIN GNN auc: 0.9545
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 82                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.06982754076284076, 0.20035581345181813, 0.1324575182147762]
+States:  [array([0.06982754]), array([0.20035581]), array([0.13245752])]
+Thresholds:  [0.08, 0.45400000000000007, 1]
+Historical maximum AUC:  0.9564954305982709
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.45300000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3361756801605225, time: 0.30178356170654297s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8741
+TRAIN GNN auc: 0.9569
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 83                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.120260963063381, 0.20266296235048156, 0.1286402673985718]
+States:  [array([0.12026096]), array([0.20266296]), array([0.12864027])]
+Thresholds:  [0.13, 0.45400000000000007, 0.96]
+Historical maximum AUC:  0.9569497667330011
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.45400000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3331314325332642, time: 0.3128182888031006s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8731
+TRAIN GNN auc: 0.9552
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 84                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.07147451256002699, 0.20435866941464223, 0.13549744729411056]
+States:  [array([0.07147451]), array([0.20435867]), array([0.13549745])]
+Thresholds:  [0.06, 0.44600000000000006, 1]
+Historical maximum AUC:  0.9569497667330011
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.45400000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3306188583374023, time: 0.706951379776001s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8511
+TEST GNN Accuracy: 0.9567
+TEST GNN Recall: 0.8992
+TEST GNN auc: 0.9694
+TEST GNN ap: 0.8633
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8700
+TEST Label1 Accuracy: 0.9646
+TEST Label1 Recall: 0.8945
+TEST Label1 auc: 0.8778
+TEST Label1 ap: 0.8024
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8735
+TRAIN GNN auc: 0.9580
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 85                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.11564472254218892, 0.20637670309035674, 0.13154471233536258]
+States:  [array([0.11564472]), array([0.2063767]), array([0.13154471])]
+Thresholds:  [0.13, 0.44900000000000007, 1]
+Historical maximum AUC:  0.9579855571819372
+Thresholds to obtain the historical maximum AUC:  [0.06, 0.44600000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3250961303710938, time: 0.7109479904174805s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8742
+TRAIN GNN auc: 0.9572
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 86                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.05724547748373363, 0.2075634010260165, 0.1385150215116534]
+States:  [array([0.05724548]), array([0.2075634]), array([0.13851502])]
+Thresholds:  [0.12, 0.44600000000000006, 1]
+Historical maximum AUC:  0.9579855571819372
+Thresholds to obtain the historical maximum AUC:  [0.06, 0.44600000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3289180994033813, time: 0.3171725273132324s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8750
+TRAIN GNN auc: 0.9573
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 87                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.11819963790357303, 0.20980858473590505, 0.14001659241877776]
+States:  [array([0.11819964]), array([0.20980858]), array([0.14001659])]
+Thresholds:  [0.13, 0.45500000000000007, 1]
+Historical maximum AUC:  0.9579855571819372
+Thresholds to obtain the historical maximum AUC:  [0.06, 0.44600000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.325080156326294, time: 0.30663061141967773s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8598
+TEST GNN Accuracy: 0.9600
+TEST GNN Recall: 0.9020
+TEST GNN auc: 0.9727
+TEST GNN ap: 0.8711
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8727
+TEST Label1 Accuracy: 0.9655
+TEST Label1 Recall: 0.8941
+TEST Label1 auc: 0.8783
+TEST Label1 ap: 0.8029
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8755
+TRAIN GNN auc: 0.9582
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 88                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.11035113066181583, 0.21143675675141213, 0.14151880605448466]
+States:  [array([0.11035113]), array([0.21143676]), array([0.14151881])]
+Thresholds:  [0.1, 0.44700000000000006, 1]
+Historical maximum AUC:  0.9582182074349401
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45500000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.314072847366333, time: 0.2973060607910156s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8741
+TRAIN GNN auc: 0.9597
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 89                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.12072040688115568, 0.21422639231011378, 0.14306427302734298]
+States:  [array([0.12072041]), array([0.21422639]), array([0.14306427])]
+Thresholds:  [0.09, 0.44800000000000006, 1]
+Historical maximum AUC:  0.9597165572970633
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.44700000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.32132089138031, time: 0.3003811836242676s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8761
+TRAIN GNN auc: 0.9603
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 90                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.09301917511738374, 0.21512965750176177, 0.14463416849310257]
+States:  [array([0.09301918]), array([0.21512966]), array([0.14463417])]
+Thresholds:  [0.08, 0.45100000000000007, 0.97]
+Historical maximum AUC:  0.9603326179081076
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.44800000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.321786880493164, time: 0.310314416885376s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8704
+TEST GNN Accuracy: 0.9640
+TEST GNN Recall: 0.9022
+TEST GNN auc: 0.9715
+TEST GNN ap: 0.8677
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8764
+TEST Label1 Accuracy: 0.9668
+TEST Label1 Recall: 0.8948
+TEST Label1 auc: 0.8789
+TEST Label1 ap: 0.8035
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8772
+TRAIN GNN auc: 0.9600
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 91                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.08558878911380671, 0.21698525161631368, 0.14620056873377335]
+States:  [array([0.08558879]), array([0.21698525]), array([0.14620057])]
+Thresholds:  [0.13, 0.45500000000000007, 1]
+Historical maximum AUC:  0.9603326179081076
+Thresholds to obtain the historical maximum AUC:  [0.09, 0.44800000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.3032552003860474, time: 0.3244752883911133s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8765
+TRAIN GNN auc: 0.9613
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 92                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.07783408011235889, 0.21911581998333002, 0.14311899928769906]
+States:  [array([0.07783408]), array([0.21911582]), array([0.143119])]
+Thresholds:  [0.11000000000000001, 0.45100000000000007, 1]
+Historical maximum AUC:  0.9613427106118668
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45500000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2873975038528442, time: 0.7224440574645996s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8761
+TRAIN GNN auc: 0.9614
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 93                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.12560495441428388, 0.2214797415795185, 0.1491815102352592]
+States:  [array([0.12560495]), array([0.22147974]), array([0.14918151])]
+Thresholds:  [0.13, 0.45400000000000007, 1]
+Historical maximum AUC:  0.9614143216617601
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45100000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2906253337860107, time: 0.3115370273590088s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8621
+TEST GNN Accuracy: 0.9611
+TEST GNN Recall: 0.8999
+TEST GNN auc: 0.9714
+TEST GNN ap: 0.8681
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8779
+TEST Label1 Accuracy: 0.9674
+TEST Label1 Recall: 0.8951
+TEST Label1 auc: 0.8794
+TEST Label1 ap: 0.8038
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8757
+TRAIN GNN auc: 0.9602
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 94                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.10831346195441317, 0.22299591528505255, 0.15063436923989215]
+States:  [array([0.10831346]), array([0.22299592]), array([0.15063437])]
+Thresholds:  [0.08, 0.44600000000000006, 1]
+Historical maximum AUC:  0.9614143216617601
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45100000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2907345294952393, time: 0.3050086498260498s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8733
+TRAIN GNN auc: 0.9615
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 95                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.12803302633876618, 0.2250768021534429, 0.15210895154705634]
+States:  [array([0.12803303]), array([0.2250768]), array([0.15210895])]
+Thresholds:  [0.15000000000000002, 0.44900000000000007, 1]
+Historical maximum AUC:  0.9615294475601532
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.44600000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2796300649642944, time: 0.3096609115600586s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8726
+TRAIN GNN auc: 0.9616
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 96                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.08089520878025463, 0.22606260728561903, 0.15362603180503379]
+States:  [array([0.08089521]), array([0.22606261]), array([0.15362603])]
+Thresholds:  [0.15000000000000002, 0.45000000000000007, 1]
+Historical maximum AUC:  0.961626071082019
+Thresholds to obtain the historical maximum AUC:  [0.15000000000000002, 0.44900000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2905213832855225, time: 0.31317639350891113s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8631
+TEST GNN Accuracy: 0.9615
+TEST GNN Recall: 0.9001
+TEST GNN auc: 0.9735
+TEST GNN ap: 0.8710
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8792
+TEST Label1 Accuracy: 0.9678
+TEST Label1 Recall: 0.8953
+TEST Label1 auc: 0.8799
+TEST Label1 ap: 0.8042
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8759
+TRAIN GNN auc: 0.9614
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 97                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.14888089056316528, 0.2282848082643058, 0.15508430025861647]
+States:  [array([0.14888089]), array([0.22828481]), array([0.1550843])]
+Thresholds:  [0.13, 0.45500000000000007, 0.997]
+Historical maximum AUC:  0.961626071082019
+Thresholds to obtain the historical maximum AUC:  [0.15000000000000002, 0.44900000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2725166082382202, time: 0.32337331771850586s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8759
+TRAIN GNN auc: 0.9619
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 98                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.15023954271991025, 0.230210079398743, 0.15655029214926097]
+States:  [array([0.15023954]), array([0.23021008]), array([0.15655029])]
+Thresholds:  [0.13, 0.45500000000000007, 1]
+Historical maximum AUC:  0.9618981245442934
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45500000000000007, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2880531549453735, time: 0.3290390968322754s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8770
+TRAIN GNN auc: 0.9617
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 99                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.13279040505330023, 0.2327733745418468, 0.15791179501264072]
+States:  [array([0.13279041]), array([0.23277337]), array([0.1579118])]
+Thresholds:  [0.15000000000000002, 0.44900000000000007, 1]
+Historical maximum AUC:  0.9618981245442934
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45500000000000007, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2714569568634033, time: 0.7107255458831787s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8709
+TEST GNN Accuracy: 0.9643
+TEST GNN Recall: 0.9016
+TEST GNN auc: 0.9735
+TEST GNN ap: 0.8705
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8793
+TEST Label1 Accuracy: 0.9679
+TEST Label1 Recall: 0.8944
+TEST Label1 auc: 0.8804
+TEST Label1 ap: 0.8046
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8771
+TRAIN GNN auc: 0.9628
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 100                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1339677226222869, 0.2346329964048471, 0.15943829372753485]
+States:  [array([0.13396772]), array([0.234633]), array([0.15943829])]
+Thresholds:  [0.15000000000000002, 0.45100000000000007, 0.997]
+Historical maximum AUC:  0.9627526602305807
+Thresholds to obtain the historical maximum AUC:  [0.15000000000000002, 0.44900000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2594740390777588, time: 0.701594352722168s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8767
+TRAIN GNN auc: 0.9633
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 101                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1542804757730743, 0.23567873238250853, 0.1609045763283459]
+States:  [array([0.15428048]), array([0.23567873]), array([0.16090458])]
+Thresholds:  [0.14, 0.45300000000000007, 0.998]
+Historical maximum AUC:  0.9632741531393736
+Thresholds to obtain the historical maximum AUC:  [0.15000000000000002, 0.45100000000000007, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2625319957733154, time: 0.31696271896362305s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8766
+TRAIN GNN auc: 0.9638
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 102                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.15561657668695517, 0.23780906925953973, 0.16225943016104702]
+States:  [array([0.15561658]), array([0.23780907]), array([0.16225943])]
+Thresholds:  [0.1, 0.45400000000000007, 0.999]
+Historical maximum AUC:  0.9638210011567412
+Thresholds to obtain the historical maximum AUC:  [0.14, 0.45300000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.267019510269165, time: 0.30579566955566406s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8650
+TEST GNN Accuracy: 0.9619
+TEST GNN Recall: 0.9040
+TEST GNN auc: 0.9748
+TEST GNN ap: 0.8737
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8792
+TEST Label1 Accuracy: 0.9679
+TEST Label1 Recall: 0.8944
+TEST Label1 auc: 0.8810
+TEST Label1 ap: 0.8050
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8758
+TRAIN GNN auc: 0.9650
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 103                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.14626426269152837, 0.23980430896819302, 0.16374312908707223]
+States:  [array([0.14626426]), array([0.23980431]), array([0.16374313])]
+Thresholds:  [0.13, 0.44800000000000006, 0.999]
+Historical maximum AUC:  0.9649654074086256
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.45400000000000007, 0.999]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2649424076080322, time: 0.301145076751709s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8763
+TRAIN GNN auc: 0.9649
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 104                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.10581406394521156, 0.24177583606130276, 0.16515356001019896]
+States:  [array([0.10581406]), array([0.24177584]), array([0.16515356])]
+Thresholds:  [0.15000000000000002, 0.44700000000000006, 0.997]
+Historical maximum AUC:  0.9649654074086256
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.45400000000000007, 0.999]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2556374073028564, time: 0.3083822727203369s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8772
+TRAIN GNN auc: 0.9645
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 105                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.13977175947830192, 0.2430057418356554, 0.16660025963744046]
+States:  [array([0.13977176]), array([0.24300574]), array([0.16660026])]
+Thresholds:  [0.12, 0.44700000000000006, 0.997]
+Historical maximum AUC:  0.9649654074086256
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.45400000000000007, 0.999]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2654643058776855, time: 0.3169441223144531s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8683
+TEST GNN Accuracy: 0.9634
+TEST GNN Recall: 0.9012
+TEST GNN auc: 0.9755
+TEST GNN ap: 0.8760
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8796
+TEST Label1 Accuracy: 0.9680
+TEST Label1 Recall: 0.8944
+TEST Label1 auc: 0.8816
+TEST Label1 ap: 0.8054
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8770
+TRAIN GNN auc: 0.9645
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 106                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1609082347196494, 0.24457794153121762, 0.16798072415808105]
+States:  [array([0.16090823]), array([0.24457794]), array([0.16798072])]
+Thresholds:  [0.07, 0.45400000000000007, 1]
+Historical maximum AUC:  0.9649654074086256
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.45400000000000007, 0.999]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2581000328063965, time: 0.31230688095092773s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8769
+TRAIN GNN auc: 0.9645
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 107                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.13115163079064562, 0.24634223162419625, 0.16941638273198326]
+States:  [array([0.13115163]), array([0.24634223]), array([0.16941638])]
+Thresholds:  [0.11000000000000001, 0.44800000000000006, 1]
+Historical maximum AUC:  0.9649654074086256
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.45400000000000007, 0.999]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2501815557479858, time: 0.7251265048980713s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8781
+TRAIN GNN auc: 0.9658
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 108                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.0789238837919471, 0.2488055844746426, 0.17093866433908986]
+States:  [array([0.07892388]), array([0.24880558]), array([0.17093866])]
+Thresholds:  [0.15000000000000002, 0.45200000000000007, 1]
+Historical maximum AUC:  0.965794245349736
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.44800000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.233017086982727, time: 0.3281736373901367s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8575
+TEST GNN Accuracy: 0.9591
+TEST GNN Recall: 0.9015
+TEST GNN auc: 0.9737
+TEST GNN ap: 0.8689
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8796
+TEST Label1 Accuracy: 0.9680
+TEST Label1 Recall: 0.8944
+TEST Label1 auc: 0.8821
+TEST Label1 ap: 0.8057
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8764
+TRAIN GNN auc: 0.9658
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 109                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.12316888438876586, 0.25004755635453824, 0.1723433748628553]
+States:  [array([0.12316888]), array([0.25004756]), array([0.17234337])]
+Thresholds:  [0.07, 0.45000000000000007, 1]
+Historical maximum AUC:  0.965794245349736
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.44800000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.242900013923645, time: 0.3051791191101074s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8786
+TRAIN GNN auc: 0.9643
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 110                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.16612607087128614, 0.2523558298985383, 0.1736984357447375]
+States:  [array([0.16612607]), array([0.25235583]), array([0.17369844])]
+Thresholds:  [0.13, 0.45200000000000007, 0.997]
+Historical maximum AUC:  0.965794245349736
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.44800000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2266457080841064, time: 0.31177401542663574s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8791
+TRAIN GNN auc: 0.9646
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 111                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.08077807957471049, 0.25391026368085584, 0.17507794361499793]
+States:  [array([0.08077808]), array([0.25391026]), array([0.17507794])]
+Thresholds:  [0.12, 0.45100000000000007, 1]
+Historical maximum AUC:  0.965794245349736
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.44800000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2448656558990479, time: 0.3203580379486084s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8629
+TEST GNN Accuracy: 0.9605
+TEST GNN Recall: 0.9093
+TEST GNN auc: 0.9761
+TEST GNN ap: 0.8780
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8804
+TEST Label1 Accuracy: 0.9683
+TEST Label1 Recall: 0.8946
+TEST Label1 auc: 0.8827
+TEST Label1 ap: 0.8059
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8765
+TRAIN GNN auc: 0.9646
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 112                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1477100114646557, 0.255989904378823, 0.17638706317367708]
+States:  [array([0.14771001]), array([0.2559899]), array([0.17638706])]
+Thresholds:  [0.13, 0.45000000000000007, 1]
+Historical maximum AUC:  0.965794245349736
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.44800000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.223038673400879, time: 0.33420348167419434s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8746
+TRAIN GNN auc: 0.9677
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 113                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.13740976880022215, 0.2577246543363366, 0.1778526972635031]
+States:  [array([0.13740977]), array([0.25772465]), array([0.1778527])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9676859420313692
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45000000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2184343338012695, time: 0.31102609634399414s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8774
+TRAIN GNN auc: 0.9675
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 114                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.14995053028876282, 0.25926780073197225, 0.17924020931102233]
+States:  [array([0.14995053]), array([0.2592678]), array([0.17924021])]
+Thresholds:  [0.13, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9676859420313692
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45000000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2193784713745117, time: 0.7019975185394287s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8787
+TEST GNN Accuracy: 0.9669
+TEST GNN Recall: 0.9038
+TEST GNN auc: 0.9762
+TEST GNN ap: 0.8752
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8825
+TEST Label1 Accuracy: 0.9690
+TEST Label1 Recall: 0.8950
+TEST Label1 auc: 0.8834
+TEST Label1 ap: 0.8063
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8793
+TRAIN GNN auc: 0.9686
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 115                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.12888556535973217, 0.2613306743369012, 0.18062726966194745]
+States:  [array([0.12888557]), array([0.26133067]), array([0.18062727])]
+Thresholds:  [0.07, 0.45000000000000007, 1]
+Historical maximum AUC:  0.9685898173883963
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45200000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2111035585403442, time: 0.6972072124481201s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8767
+TRAIN GNN auc: 0.9689
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 116                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.15216124408478682, 0.2630016119652146, 0.1820629348839006]
+States:  [array([0.15216124]), array([0.26300161]), array([0.18206293])]
+Thresholds:  [0.13, 0.45000000000000007, 0.999]
+Historical maximum AUC:  0.9689458168182491
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.45000000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2391204833984375, time: 0.31221437454223633s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8774
+TRAIN GNN auc: 0.9695
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 117                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.0843861825737852, 0.26429832536352416, 0.18352072028090521]
+States:  [array([0.08438618]), array([0.26429833]), array([0.18352072])]
+Thresholds:  [0.08, 0.45500000000000007, 0.996]
+Historical maximum AUC:  0.9694854694669671
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45000000000000007, 0.999]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2145377397537231, time: 0.313112735748291s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8616
+TEST GNN Accuracy: 0.9601
+TEST GNN Recall: 0.9088
+TEST GNN auc: 0.9771
+TEST GNN ap: 0.8782
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8828
+TEST Label1 Accuracy: 0.9692
+TEST Label1 Recall: 0.8950
+TEST Label1 auc: 0.8841
+TEST Label1 ap: 0.8067
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8785
+TRAIN GNN auc: 0.9682
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 118                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.15435023996998834, 0.2660101938768602, 0.18490915350327836]
+States:  [array([0.15435024]), array([0.26601019]), array([0.18490915])]
+Thresholds:  [0.09, 0.45400000000000007, 1]
+Historical maximum AUC:  0.9694854694669671
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45000000000000007, 0.999]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2317198514938354, time: 0.3200516700744629s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8795
+TRAIN GNN auc: 0.9674
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 119                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.09724104210497841, 0.2685299275680616, 0.18585433845117713]
+States:  [array([0.09724104]), array([0.26852993]), array([0.18585434])]
+Thresholds:  [0.13, 0.45200000000000007, 0.998]
+Historical maximum AUC:  0.9694854694669671
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45000000000000007, 0.999]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2153416872024536, time: 0.32031798362731934s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8794
+TRAIN GNN auc: 0.9684
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 120                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1086954823188235, 0.2699094810838673, 0.1876501172616337]
+States:  [array([0.10869548]), array([0.26990948]), array([0.18765012])]
+Thresholds:  [0.06, 0.45400000000000007, 1]
+Historical maximum AUC:  0.9694854694669671
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45000000000000007, 0.999]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1946535110473633, time: 0.315899133682251s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8546
+TEST GNN Accuracy: 0.9576
+TEST GNN Recall: 0.9053
+TEST GNN auc: 0.9760
+TEST GNN ap: 0.8751
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8842
+TEST Label1 Accuracy: 0.9696
+TEST Label1 Recall: 0.8953
+TEST Label1 auc: 0.8847
+TEST Label1 ap: 0.8070
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8753
+TRAIN GNN auc: 0.9708
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 121                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1576211058769744, 0.27145373133062406, 0.18900919601598137]
+States:  [array([0.15762111]), array([0.27145373]), array([0.1890092])]
+Thresholds:  [0.13, 0.44600000000000006, 1]
+Historical maximum AUC:  0.9708087320252838
+Thresholds to obtain the historical maximum AUC:  [0.06, 0.45400000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2108185291290283, time: 0.3205454349517822s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8772
+TRAIN GNN auc: 0.9706
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 122                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.0777519573072882, 0.273397049069235, 0.19032861162697412]
+States:  [array([0.07775196]), array([0.27339705]), array([0.19032861])]
+Thresholds:  [0.12, 0.45200000000000007, 0.996]
+Historical maximum AUC:  0.9708087320252838
+Thresholds to obtain the historical maximum AUC:  [0.06, 0.45400000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1892091035842896, time: 0.7134823799133301s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8772
+TRAIN GNN auc: 0.9706
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 123                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.15980918190508478, 0.2741855104197881, 0.19162289398693816]
+States:  [array([0.15980918]), array([0.27418551]), array([0.19162289])]
+Thresholds:  [0.07, 0.44700000000000006, 0.998]
+Historical maximum AUC:  0.9708087320252838
+Thresholds to obtain the historical maximum AUC:  [0.06, 0.45400000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.2180707454681396, time: 0.31676578521728516s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8785
+TEST GNN Accuracy: 0.9665
+TEST GNN Recall: 0.9073
+TEST GNN auc: 0.9775
+TEST GNN ap: 0.8797
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8842
+TEST Label1 Accuracy: 0.9696
+TEST Label1 Recall: 0.8953
+TEST Label1 auc: 0.8853
+TEST Label1 ap: 0.8072
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8788
+TRAIN GNN auc: 0.9706
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 124                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.14849613967428127, 0.2768927526239876, 0.19242166368498367]
+States:  [array([0.14849614]), array([0.27689275]), array([0.19242166])]
+Thresholds:  [0.11000000000000001, 0.44700000000000006, 1]
+Historical maximum AUC:  0.9708087320252838
+Thresholds to obtain the historical maximum AUC:  [0.06, 0.45400000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1852355003356934, time: 0.3077878952026367s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8823
+TRAIN GNN auc: 0.9704
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 125                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.08916303396962136, 0.2781144329023884, 0.1940988122879905]
+States:  [array([0.08916303]), array([0.27811443]), array([0.19409881])]
+Thresholds:  [0.15000000000000002, 0.45100000000000007, 1]
+Historical maximum AUC:  0.9708087320252838
+Thresholds to obtain the historical maximum AUC:  [0.06, 0.45400000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.220593810081482, time: 0.31029343605041504s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8852
+TRAIN GNN auc: 0.9703
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 126                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.13902226194138928, 0.2799910322265081, 0.1953194804586908]
+States:  [array([0.13902226]), array([0.27999103]), array([0.19531948])]
+Thresholds:  [0.1, 0.45000000000000007, 0.998]
+Historical maximum AUC:  0.9708087320252838
+Thresholds to obtain the historical maximum AUC:  [0.06, 0.45400000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1992213726043701, time: 0.32565927505493164s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8940
+TEST GNN Accuracy: 0.9721
+TEST GNN Recall: 0.9049
+TEST GNN auc: 0.9773
+TEST GNN ap: 0.8804
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8847
+TEST Label1 Accuracy: 0.9697
+TEST Label1 Recall: 0.8953
+TEST Label1 auc: 0.8858
+TEST Label1 ap: 0.8075
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8847
+TRAIN GNN auc: 0.9712
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 127                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1876605056836957, 0.28244050007690297, 0.19652805274276652]
+States:  [array([0.18766051]), array([0.2824405]), array([0.19652805])]
+Thresholds:  [0.13, 0.45100000000000007, 1]
+Historical maximum AUC:  0.9711849470146758
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.45000000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1880567073822021, time: 0.31421995162963867s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8798
+TRAIN GNN auc: 0.9710
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 128                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.125941694161059, 0.2841458242348312, 0.1976819087328817]
+States:  [array([0.12594169]), array([0.28414582]), array([0.19768191])]
+Thresholds:  [0.13, 0.45200000000000007, 0.998]
+Historical maximum AUC:  0.9711849470146758
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.45000000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1991227865219116, time: 0.3132355213165283s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8823
+TRAIN GNN auc: 0.9723
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 129                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.16639817581453517, 0.28630812945268014, 0.19884903906713114]
+States:  [array([0.16639818]), array([0.28630813]), array([0.19884904])]
+Thresholds:  [0.11000000000000001, 0.45500000000000007, 1]
+Historical maximum AUC:  0.9723039981579856
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1704320907592773, time: 0.7122559547424316s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8784
+TEST GNN Accuracy: 0.9669
+TEST GNN Recall: 0.9029
+TEST GNN auc: 0.9776
+TEST GNN ap: 0.8802
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8847
+TEST Label1 Accuracy: 0.9697
+TEST Label1 Recall: 0.8953
+TEST Label1 auc: 0.8862
+TEST Label1 ap: 0.8077
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8819
+TRAIN GNN auc: 0.9712
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 130                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1674932797733968, 0.28830441745810453, 0.19999037003813527]
+States:  [array([0.16749328]), array([0.28830442]), array([0.19999037])]
+Thresholds:  [0.1, 0.44600000000000006, 1]
+Historical maximum AUC:  0.9723039981579856
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1762182712554932, time: 0.7200653553009033s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8774
+TRAIN GNN auc: 0.9716
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 131                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.14368404428928327, 0.2907675390349159, 0.20112694206398254]
+States:  [array([0.14368404]), array([0.29076754]), array([0.20112694])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9723039981579856
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1764429807662964, time: 0.32970476150512695s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8781
+TRAIN GNN auc: 0.9724
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 132                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.12926525749519974, 0.2912587962557809, 0.20227497857529905]
+States:  [array([0.12926526]), array([0.2912588]), array([0.20227498])]
+Thresholds:  [0.13, 0.44700000000000006, 0.997]
+Historical maximum AUC:  0.9724232356956072
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.168826937675476, time: 0.325700044631958s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8772
+TEST GNN Accuracy: 0.9664
+TEST GNN Recall: 0.9037
+TEST GNN auc: 0.9767
+TEST GNN ap: 0.8789
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8847
+TEST Label1 Accuracy: 0.9697
+TEST Label1 Recall: 0.8953
+TEST Label1 auc: 0.8867
+TEST Label1 ap: 0.8079
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8813
+TRAIN GNN auc: 0.9730
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 133                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.14553201436923682, 0.2940707883535316, 0.20340344325430215]
+States:  [array([0.14553201]), array([0.29407079]), array([0.20340344])]
+Thresholds:  [0.15000000000000002, 0.45100000000000007, 1]
+Historical maximum AUC:  0.9729851597234785
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.44700000000000006, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1581182479858398, time: 0.2879316806793213s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8818
+TRAIN GNN auc: 0.9734
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 134                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1718365639384689, 0.29534095675614075, 0.20442707899690768]
+States:  [array([0.17183656]), array([0.29534096]), array([0.20442708])]
+Thresholds:  [0.14, 0.45300000000000007, 0.998]
+Historical maximum AUC:  0.973438810585004
+Thresholds to obtain the historical maximum AUC:  [0.15000000000000002, 0.45100000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.160953164100647, time: 0.31032800674438477s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8798
+TRAIN GNN auc: 0.9734
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 135                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.19755029494784754, 0.2976969546398243, 0.20574109337378213]
+States:  [array([0.19755029]), array([0.29769695]), array([0.20574109])]
+Thresholds:  [0.15000000000000002, 0.45200000000000007, 0.999]
+Historical maximum AUC:  0.973438810585004
+Thresholds to obtain the historical maximum AUC:  [0.15000000000000002, 0.45100000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.172829270362854, time: 0.31012821197509766s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8741
+TEST GNN Accuracy: 0.9651
+TEST GNN Recall: 0.9057
+TEST GNN auc: 0.9770
+TEST GNN ap: 0.8811
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8851
+TEST Label1 Accuracy: 0.9699
+TEST Label1 Recall: 0.8954
+TEST Label1 auc: 0.8874
+TEST Label1 ap: 0.8082
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8816
+TRAIN GNN auc: 0.9733
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 136                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.18516491730520146, 0.29956592354892586, 0.20696260894885887]
+States:  [array([0.18516492]), array([0.29956592]), array([0.20696261])]
+Thresholds:  [0.13, 0.45200000000000007, 0.999]
+Historical maximum AUC:  0.973438810585004
+Thresholds to obtain the historical maximum AUC:  [0.15000000000000002, 0.45100000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1675513982772827, time: 0.30706095695495605s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8867
+TRAIN GNN auc: 0.9734
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 137                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.19992696294600287, 0.30115189621238, 0.20821640792334128]
+States:  [array([0.19992696]), array([0.3011519]), array([0.20821641])]
+Thresholds:  [0.08, 0.44800000000000006, 0.998]
+Historical maximum AUC:  0.973438810585004
+Thresholds to obtain the historical maximum AUC:  [0.15000000000000002, 0.45100000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.160598874092102, time: 0.7097809314727783s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8878
+TRAIN GNN auc: 0.9739
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 138                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.17597372881488932, 0.3027247760004085, 0.20949400142808167]
+States:  [array([0.17597373]), array([0.30272478]), array([0.209494])]
+Thresholds:  [0.11000000000000001, 0.45000000000000007, 0.999]
+Historical maximum AUC:  0.9739205576479232
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.44800000000000006, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1521261930465698, time: 0.3134932518005371s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8829
+TEST GNN Accuracy: 0.9683
+TEST GNN Recall: 0.9047
+TEST GNN auc: 0.9749
+TEST GNN ap: 0.8767
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8856
+TEST Label1 Accuracy: 0.9700
+TEST Label1 Recall: 0.8955
+TEST Label1 auc: 0.8884
+TEST Label1 ap: 0.8085
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8801
+TRAIN GNN auc: 0.9723
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 139                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1106954092780749, 0.3037376654531036, 0.21079501092793174]
+States:  [array([0.11069541]), array([0.30373767]), array([0.21079501])]
+Thresholds:  [0.07, 0.44700000000000006, 1]
+Historical maximum AUC:  0.9739205576479232
+Thresholds to obtain the historical maximum AUC:  [0.08, 0.44800000000000006, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1761184930801392, time: 0.3102288246154785s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8803
+TRAIN GNN auc: 0.9741
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 140                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.15163391793967748, 0.30548095259078656, 0.21205736282934112]
+States:  [array([0.15163392]), array([0.30548095]), array([0.21205736])]
+Thresholds:  [0.13, 0.44800000000000006, 0.998]
+Historical maximum AUC:  0.9740507595568201
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.44700000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1406934261322021, time: 0.30442142486572266s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8830
+TRAIN GNN auc: 0.9714
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 141                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.09853550657472004, 0.3066114354580289, 0.21336638210654738]
+States:  [array([0.09853551]), array([0.30661144]), array([0.21336638])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9740507595568201
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.44700000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1544313430786133, time: 0.3104546070098877s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8748
+TEST GNN Accuracy: 0.9647
+TEST GNN Recall: 0.9127
+TEST GNN auc: 0.9775
+TEST GNN ap: 0.8841
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8863
+TEST Label1 Accuracy: 0.9703
+TEST Label1 Recall: 0.8956
+TEST Label1 auc: 0.8897
+TEST Label1 ap: 0.8090
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8881
+TRAIN GNN auc: 0.9688
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 142                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1799410128206237, 0.3081904889166037, 0.21472240957122302]
+States:  [array([0.17994101]), array([0.30819049]), array([0.21472241])]
+Thresholds:  [0.13, 0.44800000000000006, 0.998]
+Historical maximum AUC:  0.9740507595568201
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.44700000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1477665901184082, time: 0.3211541175842285s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8846
+TRAIN GNN auc: 0.9724
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 143                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.15407583075638073, 0.31010143966851655, 0.21606154560608698]
+States:  [array([0.15407583]), array([0.31010144]), array([0.21606155])]
+Thresholds:  [0.09, 0.45200000000000007, 0.996]
+Historical maximum AUC:  0.9740507595568201
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.44700000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.152298927307129, time: 0.3065512180328369s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8811
+TRAIN GNN auc: 0.9704
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 144                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.18187439306792869, 0.31102243453257405, 0.2173660543285561]
+States:  [array([0.18187439]), array([0.31102243]), array([0.21736605])]
+Thresholds:  [0.13, 0.44600000000000006, 1]
+Historical maximum AUC:  0.9740507595568201
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.44700000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1362372636795044, time: 0.7159349918365479s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8735
+TEST GNN Accuracy: 0.9646
+TEST GNN Recall: 0.9100
+TEST GNN auc: 0.9747
+TEST GNN ap: 0.8774
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8872
+TEST Label1 Accuracy: 0.9706
+TEST Label1 Recall: 0.8958
+TEST Label1 auc: 0.8912
+TEST Label1 ap: 0.8094
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8833
+TRAIN GNN auc: 0.9720
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 145                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1268053852421798, 0.3130132398750851, 0.21815229677116021]
+States:  [array([0.12680539]), array([0.31301324]), array([0.2181523])]
+Thresholds:  [0.14, 0.45500000000000007, 1]
+Historical maximum AUC:  0.9740507595568201
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.44700000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1409069299697876, time: 0.7056293487548828s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8893
+TRAIN GNN auc: 0.9729
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 146                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.183785127136654, 0.31338273617808204, 0.21999566603521198]
+States:  [array([0.18378513]), array([0.31338274]), array([0.21999567])]
+Thresholds:  [0.13, 0.45200000000000007, 0.998]
+Historical maximum AUC:  0.9740507595568201
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.44700000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.131699562072754, time: 0.3134126663208008s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8907
+TRAIN GNN auc: 0.9735
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 147                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.19675379788469455, 0.3163054148199803, 0.22130822813739914]
+States:  [array([0.1967538]), array([0.31630541]), array([0.22130823])]
+Thresholds:  [0.13, 0.44900000000000007, 1]
+Historical maximum AUC:  0.9740507595568201
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.44700000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1335265636444092, time: 0.30480480194091797s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8715
+TEST GNN Accuracy: 0.9640
+TEST GNN Recall: 0.9079
+TEST GNN auc: 0.9774
+TEST GNN ap: 0.8825
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8881
+TEST Label1 Accuracy: 0.9708
+TEST Label1 Recall: 0.8959
+TEST Label1 auc: 0.8928
+TEST Label1 ap: 0.8097
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8876
+TRAIN GNN auc: 0.9745
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 148                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1856832462695206, 0.3171762936814925, 0.22255140632795126]
+States:  [array([0.18568325]), array([0.31717629]), array([0.22255141])]
+Thresholds:  [0.15000000000000002, 0.44700000000000006, 1]
+Historical maximum AUC:  0.9744701467581094
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.44900000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.120453953742981, time: 0.32268357276916504s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8897
+TRAIN GNN auc: 0.9731
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 149                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.18663113836409312, 0.31813736170512785, 0.22379495150169676]
+States:  [array([0.18663114]), array([0.31813736]), array([0.22379495])]
+Thresholds:  [0.14, 0.45000000000000007, 0.999]
+Historical maximum AUC:  0.9744701467581094
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.44900000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.131691575050354, time: 0.32208752632141113s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8875
+TRAIN GNN auc: 0.9740
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 150                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.21453561431071796, 0.3193909903888458, 0.22498006754779803]
+States:  [array([0.21453561]), array([0.31939099]), array([0.22498007])]
+Thresholds:  [0.07, 0.44600000000000006, 1]
+Historical maximum AUC:  0.9744701467581094
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.44900000000000007, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.117512583732605, time: 0.3139820098876953s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8899
+TEST GNN Accuracy: 0.9706
+TEST GNN Recall: 0.9058
+TEST GNN auc: 0.9778
+TEST GNN ap: 0.8806
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8868
+TEST Label1 Accuracy: 0.9704
+TEST Label1 Recall: 0.8957
+TEST Label1 auc: 0.8942
+TEST Label1 ap: 0.8102
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8808
+TRAIN GNN auc: 0.9746
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 151                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.20086366342817374, 0.3213474580101801, 0.22613430140322024]
+States:  [array([0.20086366]), array([0.32134746]), array([0.2261343])]
+Thresholds:  [0.07, 0.44600000000000006, 0.997]
+Historical maximum AUC:  0.9746287875050026
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.44600000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1248672008514404, time: 0.3281881809234619s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8801
+TRAIN GNN auc: 0.9736
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 152                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1042094895148867, 0.3221900377915534, 0.22734296662589823]
+States:  [array([0.10420949]), array([0.32219004]), array([0.22734297])]
+Thresholds:  [0.11000000000000001, 0.44700000000000006, 1]
+Historical maximum AUC:  0.9746287875050026
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.44600000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.132026195526123, time: 0.7267122268676758s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8822
+TRAIN GNN auc: 0.9729
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 153                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1047352914938657, 0.323732591517828, 0.2283929194335765]
+States:  [array([0.10473529]), array([0.32373259]), array([0.22839292])]
+Thresholds:  [0.13, 0.45100000000000007, 0.998]
+Historical maximum AUC:  0.9746287875050026
+Thresholds to obtain the historical maximum AUC:  [0.07, 0.44600000000000006, 1]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1368205547332764, time: 0.31419944763183594s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8953
+TEST GNN Accuracy: 0.9725
+TEST GNN Recall: 0.9031
+TEST GNN auc: 0.9780
+TEST GNN ap: 0.8830
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8864
+TEST Label1 Accuracy: 0.9703
+TEST Label1 Recall: 0.8956
+TEST Label1 auc: 0.8956
+TEST Label1 ap: 0.8105
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8844
+TRAIN GNN auc: 0.9749
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 154                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1628734953201152, 0.32552808800520483, 0.22965136051013324]
+States:  [array([0.1628735]), array([0.32552809]), array([0.22965136])]
+Thresholds:  [0.1, 0.45000000000000007, 1]
+Historical maximum AUC:  0.9749080363359265
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45100000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1253200769424438, time: 0.3124213218688965s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8861
+TRAIN GNN auc: 0.9747
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 155                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.19237264443319826, 0.32769621670193766, 0.23084213363127395]
+States:  [array([0.19237264]), array([0.32769622]), array([0.23084213])]
+Thresholds:  [0.13, 0.45000000000000007, 0.999]
+Historical maximum AUC:  0.9749080363359265
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45100000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.13192617893219, time: 0.3196446895599365s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8955
+TRAIN GNN auc: 0.9747
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 156                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1469367641604735, 0.3288110028729438, 0.2320647415359346]
+States:  [array([0.14693676]), array([0.328811]), array([0.23206474])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 0.997]
+Historical maximum AUC:  0.9749080363359265
+Thresholds to obtain the historical maximum AUC:  [0.13, 0.45100000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1303764581680298, time: 0.30635547637939453s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8976
+TEST GNN Accuracy: 0.9732
+TEST GNN Recall: 0.9045
+TEST GNN auc: 0.9791
+TEST GNN ap: 0.8865
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8887
+TEST Label1 Accuracy: 0.9710
+TEST Label1 Recall: 0.8960
+TEST Label1 auc: 0.8976
+TEST Label1 ap: 0.8110
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8833
+TRAIN GNN auc: 0.9757
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 157                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.19424536624274696, 0.33025296863424203, 0.23326776052265236]
+States:  [array([0.19424537]), array([0.33025297]), array([0.23326776])]
+Thresholds:  [0.08, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9757303641815919
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1018187999725342, time: 0.30202198028564453s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8805
+TRAIN GNN auc: 0.9737
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 158                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.16597347627410958, 0.3319649761836843, 0.23443024383857144]
+States:  [array([0.16597348]), array([0.33196498]), array([0.23443024])]
+Thresholds:  [0.1, 0.45100000000000007, 1]
+Historical maximum AUC:  0.9757303641815919
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1319793462753296, time: 0.3036947250366211s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8827
+TRAIN GNN auc: 0.9745
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 159                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.12230194024150334, 0.3332095086013433, 0.23584097093565268]
+States:  [array([0.12230194]), array([0.33320951]), array([0.23584097])]
+Thresholds:  [0.12, 0.44900000000000007, 1]
+Historical maximum AUC:  0.9757303641815919
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1036975383758545, time: 0.7140872478485107s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8855
+TEST GNN Accuracy: 0.9693
+TEST GNN Recall: 0.9041
+TEST GNN auc: 0.9770
+TEST GNN ap: 0.8825
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8917
+TEST Label1 Accuracy: 0.9720
+TEST Label1 Recall: 0.8965
+TEST Label1 auc: 0.9005
+TEST Label1 ap: 0.8118
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8854
+TRAIN GNN auc: 0.9751
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 160                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1495848760735455, 0.334301846024737, 0.23716648714078964]
+States:  [array([0.14958488]), array([0.33430185]), array([0.23716649])]
+Thresholds:  [0.13, 0.45200000000000007, 0.997]
+Historical maximum AUC:  0.9757303641815919
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0952985286712646, time: 0.3127257823944092s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8849
+TRAIN GNN auc: 0.9745
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 161                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.182218981734754, 0.3350003605174295, 0.23851121459128208]
+States:  [array([0.18221898]), array([0.33500036]), array([0.23851121])]
+Thresholds:  [0.06, 0.45000000000000007, 1]
+Historical maximum AUC:  0.9757303641815919
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.098502516746521, time: 0.31908154487609863s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8832
+TRAIN GNN auc: 0.9723
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 162                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.1986707621298659, 0.33665499097630297, 0.2397333669232825]
+States:  [array([0.19867076]), array([0.33665499]), array([0.23973337])]
+Thresholds:  [0.13, 0.44800000000000006, 1]
+Historical maximum AUC:  0.9757303641815919
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1045491695404053, time: 0.31926894187927246s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8753
+TEST GNN Accuracy: 0.9651
+TEST GNN Recall: 0.9104
+TEST GNN auc: 0.9772
+TEST GNN ap: 0.8821
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8917
+TEST Label1 Accuracy: 0.9720
+TEST Label1 Recall: 0.8965
+TEST Label1 auc: 0.9030
+TEST Label1 ap: 0.8124
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8846
+TRAIN GNN auc: 0.9742
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 163                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.09760261615928338, 0.3375665628878965, 0.24106920444107666]
+States:  [array([0.09760262]), array([0.33756656]), array([0.2410692])]
+Thresholds:  [0.13, 0.45000000000000007, 0.997]
+Historical maximum AUC:  0.9757303641815919
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1173940896987915, time: 0.31419992446899414s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8833
+TRAIN GNN auc: 0.9754
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 164                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.20047494846855363, 0.3387479638152805, 0.24226138136236886]
+States:  [array([0.20047495]), array([0.33874796]), array([0.24226138])]
+Thresholds:  [0.13, 0.45100000000000007, 1]
+Historical maximum AUC:  0.9757303641815919
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0872423648834229, time: 0.31302499771118164s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8894
+TRAIN GNN auc: 0.9747
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 165                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Rewards:  [0.2013736207105608, 0.34030184030105215, 0.24334460984937484]
+States:  [array([0.20137362]), array([0.34030184]), array([0.24334461])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Historical maximum AUC:  0.9757303641815919
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0926352739334106, time: 0.31679511070251465s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.7972
+TEST GNN Accuracy: 0.9280
+TEST GNN Recall: 0.9204
+TEST GNN auc: 0.9767
+TEST GNN ap: 0.8821
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8918
+TEST Label1 Accuracy: 0.9720
+TEST Label1 Recall: 0.8965
+TEST Label1 auc: 0.9058
+TEST Label1 ap: 0.8130
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.9022
+TRAIN GNN auc: 0.9732
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 166                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Rewards:  [0.20225301959390204, 0.34190488695675586, 0.24467971534966404]
+States:  [array([0.20225302]), array([0.34190489]), array([0.24467972])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9757303641815919
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.114628791809082, time: 0.3250572681427002s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8871
+TRAIN GNN auc: 0.9735
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 167                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Rewards:  [0.17251544957923656, 0.34325823114785525, 0.24591393634632028]
+States:  [array([0.17251545]), array([0.34325823]), array([0.24591394])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9757303641815919
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1257636547088623, time: 0.7063195705413818s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8799
+TRAIN GNN auc: 0.9745
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 168                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.1732659454529102, 0.3446404012742125, 0.24707829784592572]
+States:  [array([0.17326595]), array([0.3446404]), array([0.2470783])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Historical maximum AUC:  0.9757303641815919
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.997]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1025110483169556, time: 0.2988729476928711s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8997
+TEST GNN Accuracy: 0.9740
+TEST GNN Recall: 0.9041
+TEST GNN auc: 0.9787
+TEST GNN ap: 0.8824
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8918
+TEST Label1 Accuracy: 0.9720
+TEST Label1 Recall: 0.8965
+TEST Label1 auc: 0.9085
+TEST Label1 ap: 0.8137
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8841
+TRAIN GNN auc: 0.9764
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 169                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.174017828117069, 0.3460334097414198, 0.24822079808470413]
+States:  [array([0.17401783]), array([0.34603341]), array([0.2482208])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0876132249832153, time: 0.3092217445373535s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8842
+TRAIN GNN auc: 0.9691
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 170                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.17473251237027956, 0.3472813690807734, 0.24943150615666693]
+States:  [array([0.17473251]), array([0.34728137]), array([0.24943151])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1052947044372559, time: 0.30776524543762207s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8806
+TRAIN GNN auc: 0.9692
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 171                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.17544843865983797, 0.3485311737590323, 0.2506367895361139]
+States:  [array([0.17544844]), array([0.34853117]), array([0.25063679])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.101420283317566, time: 0.29294919967651367s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8952
+TEST GNN Accuracy: 0.9724
+TEST GNN Recall: 0.9061
+TEST GNN auc: 0.9774
+TEST GNN ap: 0.8817
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8918
+TEST Label1 Accuracy: 0.9720
+TEST Label1 Recall: 0.8965
+TEST Label1 auc: 0.9124
+TEST Label1 ap: 0.8146
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8835
+TRAIN GNN auc: 0.9698
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 172                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.17615797724552062, 0.34975334040299383, 0.2518520036526118]
+States:  [array([0.17615798]), array([0.34975334]), array([0.251852])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 0.999]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1046555042266846, time: 0.31226062774658203s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8873
+TRAIN GNN auc: 0.9722
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 173                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.1768137981457879, 0.3507643540123031, 0.2531847807984296]
+States:  [array([0.1768138]), array([0.35076435]), array([0.25318478])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0931557416915894, time: 0.316417932510376s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8841
+TRAIN GNN auc: 0.9739
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 174                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.17748560693674473, 0.35185197779854055, 0.25447605639351845]
+States:  [array([0.17748561]), array([0.35185198]), array([0.25447606])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0889116525650024, time: 0.7045819759368896s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8639
+TEST GNN Accuracy: 0.9615
+TEST GNN Recall: 0.9028
+TEST GNN auc: 0.9747
+TEST GNN ap: 0.8762
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8935
+TEST Label1 Accuracy: 0.9725
+TEST Label1 Recall: 0.8968
+TEST Label1 auc: 0.9163
+TEST Label1 ap: 0.8155
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8817
+TRAIN GNN auc: 0.9717
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 175                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.1781710171946967, 0.3529960073166671, 0.2557331673306984]
+States:  [array([0.17817102]), array([0.35299601]), array([0.25573317])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0736089944839478, time: 0.3092362880706787s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8799
+TRAIN GNN auc: 0.9708
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 176                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.1788575940006964, 0.35415812747429337, 0.2569787361360207]
+States:  [array([0.17885759]), array([0.35415813]), array([0.25697874])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0896106958389282, time: 0.30878424644470215s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8797
+TRAIN GNN auc: 0.9719
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 177                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.17952939604155455, 0.35528259815052915, 0.25824011539332176]
+States:  [array([0.1795294]), array([0.3552826]), array([0.25824012])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1155670881271362, time: 0.31600284576416016s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8742
+TEST GNN Accuracy: 0.9651
+TEST GNN Recall: 0.9058
+TEST GNN auc: 0.9771
+TEST GNN ap: 0.8825
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8940
+TEST Label1 Accuracy: 0.9727
+TEST Label1 Recall: 0.8969
+TEST Label1 auc: 0.9199
+TEST Label1 ap: 0.8164
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8833
+TRAIN GNN auc: 0.9742
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 178                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.18020373142537036, 0.3564241044108424, 0.25948449191864204]
+States:  [array([0.18020373]), array([0.3564241]), array([0.25948449])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 0.996]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.107914924621582, time: 0.311464786529541s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8856
+TRAIN GNN auc: 0.9741
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 179                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.18091196811533963, 0.3576888266660006, 0.2606574583916524]
+States:  [array([0.18091197]), array([0.35768883]), array([0.26065746])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0797488689422607, time: 0.300029993057251s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8850
+TRAIN GNN auc: 0.9743
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 180                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.18162440709651462, 0.3589717389101178, 0.261239638842969]
+States:  [array([0.18162441]), array([0.35897174]), array([0.26123964])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0704110860824585, time: 0.29678964614868164s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8868
+TEST GNN Accuracy: 0.9694
+TEST GNN Recall: 0.9081
+TEST GNN auc: 0.9781
+TEST GNN ap: 0.8840
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8944
+TEST Label1 Accuracy: 0.9728
+TEST Label1 Recall: 0.8970
+TEST Label1 auc: 0.9224
+TEST Label1 ap: 0.8171
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8842
+TRAIN GNN auc: 0.9737
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 181                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.18232649706658863, 0.36022173759128884, 0.2629785991452975]
+States:  [array([0.1823265]), array([0.36022174]), array([0.2629786])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1077603101730347, time: 0.32076597213745117s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8838
+TRAIN GNN auc: 0.9740
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 182                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.1830530092575029, 0.361572666617884, 0.2640725776407211]
+States:  [array([0.18305301]), array([0.36157267]), array([0.26407258])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0984117984771729, time: 0.3089139461517334s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8857
+TRAIN GNN auc: 0.9737
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 183                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.18376857113270534, 0.3628863246134012, 0.2651838007070113]
+States:  [array([0.18376857]), array([0.36288632]), array([0.2651838])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 0.999]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1055126190185547, time: 0.30037450790405273s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8983
+TEST GNN Accuracy: 0.9735
+TEST GNN Recall: 0.9046
+TEST GNN auc: 0.9771
+TEST GNN ap: 0.8800
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8944
+TEST Label1 Accuracy: 0.9728
+TEST Label1 Recall: 0.8970
+TEST Label1 auc: 0.9246
+TEST Label1 ap: 0.8177
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8868
+TRAIN GNN auc: 0.9741
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 184                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.18450465825669496, 0.3642658025185951, 0.26626625983208224]
+States:  [array([0.18450466]), array([0.3642658]), array([0.26626626])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0883574485778809, time: 0.3069422245025635s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8863
+TRAIN GNN auc: 0.9747
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 185                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.18523019879728883, 0.3656119410934783, 0.26735288896029585]
+States:  [array([0.1852302]), array([0.36561194]), array([0.26735289])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0644855499267578, time: 0.3097269535064697s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8840
+TRAIN GNN auc: 0.9748
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 186                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.1859595954454571, 0.3669785978141649, 0.2684245945643475]
+States:  [array([0.1859596]), array([0.3669786]), array([0.26842459])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0868970155715942, time: 0.3021252155303955s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8880
+TEST GNN Accuracy: 0.9700
+TEST GNN Recall: 0.9063
+TEST GNN auc: 0.9787
+TEST GNN ap: 0.8774
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8953
+TEST Label1 Accuracy: 0.9731
+TEST Label1 Recall: 0.8971
+TEST Label1 auc: 0.9267
+TEST Label1 ap: 0.8184
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8842
+TRAIN GNN auc: 0.9749
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 187                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.18666920369725234, 0.36827420424261836, 0.26953186526976897]
+States:  [array([0.1866692]), array([0.3682742]), array([0.26953187])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0798059701919556, time: 0.3068959712982178s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8843
+TRAIN GNN auc: 0.9756
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 188                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.1873878629034401, 0.3696109927449399, 0.27060978769103466]
+States:  [array([0.18738786]), array([0.36961099]), array([0.27060979])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 1]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.0758564472198486, time: 0.3253962993621826s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.8838
+TRAIN GNN auc: 0.9755
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 189                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Relation 3 is complete ！！！！!
+Rewards:  [0.18813294013996265, 0.3710581164365077, 0.27161809656673613]
+States:  [array([0.18813294]), array([0.37105812]), array([0.2716181])]
+Thresholds:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Historical maximum AUC:  0.9764180358425297
+Thresholds to obtain the historical maximum AUC:  [0.11000000000000001, 0.45200000000000007, 0.998]
+Current depth of each RL Tree:  [1, 2, 2]
+Completion flag of the entire RL Forest:  False
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 1.1110198497772217, time: 0.7202155590057373s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.8903
+TEST GNN Accuracy: 0.9708
+TEST GNN Recall: 0.9050
+TEST GNN auc: 0.9783
+TEST GNN ap: 0.8807
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.8953
+TEST Label1 Accuracy: 0.9731
+TEST Label1 Recall: 0.8971
+TEST Label1 auc: 0.9273
+TEST Label1 ap: 0.8186
+
++------------------------------------------------------------------------------------------+
+
+Total time spent:  907.1109318733215
+Total epoch:  189
