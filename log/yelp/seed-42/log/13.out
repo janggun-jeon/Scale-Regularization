@@ -1,0 +1,3892 @@
+nohup: ignoring input
+
++------------------------------------------------------------------------------------------+
+* Training and testing RIO-GNN *
+* Paper: Reinforced Neighborhood Selection Guided Multi-Relational Graph Neural Networks *
+* Source: https://github.com/safe-graph/RioGNN *
+
++------------------------------------------------------------------------------------------+
+
+Log save path: ./log/yelp/
+CUDA:  True
+Running on:  yelp
+The number of relations:  3
+Width of each relation tree:  [10, 10, 10]
+Height of each relation tree:  [2, 2, 2]
+Model:  RIO, Inter-AGG:  GNN, feat_size:  32, emb_size:  32.
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 0                                               
++------------------------------------------------------------------------------------------+
+
+Historical maximum AUC:  0
+Thresholds to obtain the historical maximum AUC:  [0, 0, 0]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0
+Thresholds to obtain the historical maximum AUC:  [0, 0, 0]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0
+Thresholds to obtain the historical maximum AUC:  [0, 0, 0]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0
+Thresholds to obtain the historical maximum AUC:  [0, 0, 0]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0
+Thresholds to obtain the historical maximum AUC:  [0, 0, 0]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0
+Thresholds to obtain the historical maximum AUC:  [0, 0, 0]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6902536551157633, time: 1.9104406833648682s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6136
+TEST GNN Accuracy: 0.8331
+TEST GNN Recall: 0.6014
+TEST GNN auc: 0.7142
+TEST GNN ap: 0.2967
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.4763
+TEST Label1 Accuracy: 0.5239
+TEST Label1 Recall: 0.6251
+TEST Label1 auc: 0.5834
+TEST Label1 ap: 0.1913
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.6090
+TRAIN GNN auc: 0.7071
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 1                                               
++------------------------------------------------------------------------------------------+
+
+States:  [array([0.00106668]), array([0.00335656]), array([0.00357557])]
+Thresholds:  [0.4, 1, 0.8]
+Historical maximum AUC:  0.7071423839189389
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.5]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7071423839189389
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.5]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7071423839189389
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.5]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7071423839189389
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.5]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7071423839189389
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.5]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7071423839189389
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.5]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6834125518798828, time: 1.5960090160369873s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.6531
+TRAIN GNN auc: 0.7258
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 2                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.0012140601990900562, 0.008783637622356904, 0.007086312139120295]
+States:  [array([0.00121406]), array([0.00878364]), array([0.00708631])]
+Thresholds:  [0.6000000000000001, 0.2, 0.2]
+Historical maximum AUC:  0.7257851440168479
+Thresholds to obtain the historical maximum AUC:  [0.4, 1, 0.8]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7257851440168479
+Thresholds to obtain the historical maximum AUC:  [0.4, 1, 0.8]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7257851440168479
+Thresholds to obtain the historical maximum AUC:  [0.4, 1, 0.8]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7257851440168479
+Thresholds to obtain the historical maximum AUC:  [0.4, 1, 0.8]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7257851440168479
+Thresholds to obtain the historical maximum AUC:  [0.4, 1, 0.8]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7257851440168479
+Thresholds to obtain the historical maximum AUC:  [0.4, 1, 0.8]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6693698565165201, time: 1.6295063495635986s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.6638
+TRAIN GNN auc: 0.7300
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 3                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.0022191650733692668, 0.004336660188247258, 0.0042642008259287855]
+States:  [array([0.00221917]), array([0.00433666]), array([0.0042642])]
+Thresholds:  [0.1, 0.9, 0.7000000000000001]
+Historical maximum AUC:  0.7300203091364184
+Thresholds to obtain the historical maximum AUC:  [0.6000000000000001, 0.2, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7300203091364184
+Thresholds to obtain the historical maximum AUC:  [0.6000000000000001, 0.2, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7300203091364184
+Thresholds to obtain the historical maximum AUC:  [0.6000000000000001, 0.2, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7300203091364184
+Thresholds to obtain the historical maximum AUC:  [0.6000000000000001, 0.2, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7300203091364184
+Thresholds to obtain the historical maximum AUC:  [0.6000000000000001, 0.2, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7300203091364184
+Thresholds to obtain the historical maximum AUC:  [0.6000000000000001, 0.2, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6636008024215698, time: 1.7649588584899902s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.5762
+TEST GNN Accuracy: 0.6616
+TEST GNN Recall: 0.6918
+TEST GNN auc: 0.7504
+TEST GNN ap: 0.3290
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5398
+TEST Label1 Accuracy: 0.6124
+TEST Label1 Recall: 0.6666
+TEST Label1 auc: 0.6909
+TEST Label1 ap: 0.2710
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.6819
+TRAIN GNN auc: 0.7453
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 4                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.0018908502442130867, 0.013610293507355348, 0.011066370548307261]
+States:  [array([0.00189085]), array([0.01361029]), array([0.01106637])]
+Thresholds:  [0.7000000000000001, 0.1, 1]
+Historical maximum AUC:  0.7452529955499588
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.9, 0.7000000000000001]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7452529955499588
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.9, 0.7000000000000001]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7452529955499588
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.9, 0.7000000000000001]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7452529955499588
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.9, 0.7000000000000001]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7452529955499588
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.9, 0.7000000000000001]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7452529955499588
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.9, 0.7000000000000001]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6532884438832601, time: 1.77850341796875s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.6835
+TRAIN GNN auc: 0.7555
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 5                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.0034946280014267147, 0.004740229742125602, 0.02026246540353382]
+States:  [array([0.00349463]), array([0.00474023]), array([0.02026247])]
+Thresholds:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Historical maximum AUC:  0.7554516399711068
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.1, 1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7554516399711068
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.1, 1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7554516399711068
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.1, 1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7554516399711068
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.1, 1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7554516399711068
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.1, 1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7554516399711068
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.1, 1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6539979378382365, time: 1.446639060974121s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.6923
+TRAIN GNN auc: 0.7660
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 6                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.004581793434132747, 0.007061330065121329, 0.010946663398279313]
+States:  [array([0.00458179]), array([0.00706133]), array([0.01094666])]
+Thresholds:  [0.2, 0.4, 0.6000000000000001]
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6690452893575033, time: 1.7128276824951172s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6350
+TEST GNN Accuracy: 0.7709
+TEST GNN Recall: 0.6813
+TEST GNN auc: 0.7589
+TEST GNN ap: 0.3663
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5526
+TEST Label1 Accuracy: 0.6329
+TEST Label1 Recall: 0.6701
+TEST Label1 auc: 0.7127
+TEST Label1 ap: 0.2921
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.6730
+TRAIN GNN auc: 0.7542
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 7                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.003210778986179689, 0.01109097670271073, 0.01602669841381939]
+States:  [array([0.00321078]), array([0.01109098]), array([0.0160267])]
+Thresholds:  [0.4, 0.30000000000000004, 0.7000000000000001]
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6417025725046793, time: 1.745732307434082s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.6875
+TRAIN GNN auc: 0.7653
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 8                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.004106786181645805, 0.010649060128793584, 0.021716569246631803]
+States:  [array([0.00410679]), array([0.01064906]), array([0.02171657])]
+Thresholds:  [0.1, 0.30000000000000004, 0.4]
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6526454289754232, time: 1.6775479316711426s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.6816
+TRAIN GNN auc: 0.7530
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 9                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.0036241941957955285, 0.010803206810901375, 0.016446324632793156]
+States:  [array([0.00362419]), array([0.01080321]), array([0.01644632])]
+Thresholds:  [0.5, 0.8, 0.30000000000000004]
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7660203029402493
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.30000000000000004, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.673003355662028, time: 1.4671881198883057s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.5940
+TEST GNN Accuracy: 0.6866
+TEST GNN Recall: 0.7010
+TEST GNN auc: 0.7726
+TEST GNN ap: 0.3890
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5654
+TEST Label1 Accuracy: 0.6528
+TEST Label1 Recall: 0.6744
+TEST Label1 auc: 0.7223
+TEST Label1 ap: 0.3031
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.6989
+TRAIN GNN auc: 0.7687
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 10                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.005340601774735953, 0.026586352616527045, 0.013575237052237931]
+States:  [array([0.0053406]), array([0.02658635]), array([0.01357524])]
+Thresholds:  [0.5, 0.5, 0.1]
+Historical maximum AUC:  0.7687139088033504
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.8, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7687139088033504
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.8, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7687139088033504
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.8, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7687139088033504
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.8, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7687139088033504
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.8, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7687139088033504
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.8, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6445083618164062, time: 1.371514081954956s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7037
+TRAIN GNN auc: 0.7749
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 11                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.005422659119082911, 0.022083808100109154, 0.006810990373630014]
+States:  [array([0.00542266]), array([0.02208381]), array([0.00681099])]
+Thresholds:  [0.6000000000000001, 0.2, 0.1]
+Historical maximum AUC:  0.774875629775072
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.774875629775072
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.774875629775072
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.774875629775072
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.774875629775072
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.774875629775072
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6351605653762817, time: 1.532686471939087s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7010
+TRAIN GNN auc: 0.7820
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 12                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.007337384029782378, 0.01129990528613392, 0.0058251285214019665]
+States:  [array([0.00733738]), array([0.01129991]), array([0.00582513])]
+Thresholds:  [1, 1, 0.9]
+Historical maximum AUC:  0.7819657275577727
+Thresholds to obtain the historical maximum AUC:  [0.6000000000000001, 0.2, 0.1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7819657275577727
+Thresholds to obtain the historical maximum AUC:  [0.6000000000000001, 0.2, 0.1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7819657275577727
+Thresholds to obtain the historical maximum AUC:  [0.6000000000000001, 0.2, 0.1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7819657275577727
+Thresholds to obtain the historical maximum AUC:  [0.6000000000000001, 0.2, 0.1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7819657275577727
+Thresholds to obtain the historical maximum AUC:  [0.6000000000000001, 0.2, 0.1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7819657275577727
+Thresholds to obtain the historical maximum AUC:  [0.6000000000000001, 0.2, 0.1]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6428383191426595, time: 1.7997095584869385s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6667
+TEST GNN Accuracy: 0.7941
+TEST GNN Recall: 0.7167
+TEST GNN auc: 0.7988
+TEST GNN ap: 0.4511
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5931
+TEST Label1 Accuracy: 0.7063
+TEST Label1 Recall: 0.6694
+TEST Label1 auc: 0.7264
+TEST Label1 ap: 0.3077
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7173
+TRAIN GNN auc: 0.7962
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 13                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.009070251834443127, 0.0405607649185491, 0.036157531578519204]
+States:  [array([0.00907025]), array([0.04056076]), array([0.03615753])]
+Thresholds:  [0.30000000000000004, 0.1, 0.7000000000000001]
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6353935400644938, time: 1.7456145286560059s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7042
+TRAIN GNN auc: 0.7732
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 14                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.005522466836020766, 0.012546108263578831, 0.037066797749571036]
+States:  [array([0.00552247]), array([0.01254611]), array([0.0370668])]
+Thresholds:  [0.4, 0.1, 0.5]
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6156188646952311, time: 1.4693734645843506s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7011
+TRAIN GNN auc: 0.7795
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 15                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.007331991752648846, 0.005591715060498159, 0.02943068190339039]
+States:  [array([0.00733199]), array([0.00559172]), array([0.02943068])]
+Thresholds:  [0.1, 0.9, 0.30000000000000004]
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6211631298065186, time: 1.4759862422943115s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6104
+TEST GNN Accuracy: 0.7119
+TEST GNN Recall: 0.7051
+TEST GNN auc: 0.7724
+TEST GNN ap: 0.3732
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.6155
+TEST Label1 Accuracy: 0.7653
+TEST Label1 Recall: 0.6503
+TEST Label1 auc: 0.7294
+TEST Label1 ap: 0.3111
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.6986
+TRAIN GNN auc: 0.7702
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 16                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.005873576007046559, 0.04294221387968548, 0.021173929084249626]
+States:  [array([0.00587358]), array([0.04294221]), array([0.02117393])]
+Thresholds:  [0.7000000000000001, 0.30000000000000004, 0.5]
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6732989947001139, time: 1.483351469039917s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7149
+TRAIN GNN auc: 0.7889
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 17                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.00951515271363264, 0.023652872804030323, 0.028448635355783455]
+States:  [array([0.00951515]), array([0.02365287]), array([0.02844864])]
+Thresholds:  [0.5, 0.2, 1]
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6152456601460775, time: 1.755511999130249s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7063
+TRAIN GNN auc: 0.7838
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 18                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.009107721141545325, 0.013994684940081893, 0.05729125922718926]
+States:  [array([0.00910772]), array([0.01399468]), array([0.05729126])]
+Thresholds:  [0.8, 0.9, 0.9]
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7961719470341917
+Thresholds to obtain the historical maximum AUC:  [1, 1, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6061869859695435, time: 1.840712308883667s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6352
+TEST GNN Accuracy: 0.7414
+TEST GNN Recall: 0.7230
+TEST GNN auc: 0.8001
+TEST GNN ap: 0.4547
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.4843
+TEST Label1 Accuracy: 0.5254
+TEST Label1 Recall: 0.6560
+TEST Label1 auc: 0.7326
+TEST Label1 ap: 0.3146
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7200
+TRAIN GNN auc: 0.7977
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 19                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.011188942664047697, 0.049791779776555224, 0.05859776596172548]
+States:  [array([0.01118894]), array([0.04979178]), array([0.05859777])]
+Thresholds:  [0.6000000000000001, 0.9, 0.1]
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6292212804158529, time: 1.6454405784606934s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7050
+TRAIN GNN auc: 0.7877
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 20                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.011351667488312615, 0.057669111482845564, 0.016924693929449054]
+States:  [array([0.01135167]), array([0.05766911]), array([0.01692469])]
+Thresholds:  [0.2, 0.1, 0.4]
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.610736091931661, time: 1.4373400211334229s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7014
+TRAIN GNN auc: 0.7794
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 21                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.007314627133882131, 0.016021237791874095, 0.026767621018261707]
+States:  [array([0.00731463]), array([0.01602124]), array([0.02676762])]
+Thresholds:  [0.30000000000000004, 0.2, 0.9]
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6279551188151041, time: 1.7503418922424316s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6524
+TEST GNN Accuracy: 0.7835
+TEST GNN Recall: 0.7012
+TEST GNN auc: 0.7874
+TEST GNN ap: 0.4259
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.6130
+TEST Label1 Accuracy: 0.7466
+TEST Label1 Recall: 0.6647
+TEST Label1 auc: 0.7349
+TEST Label1 ap: 0.3173
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7008
+TRAIN GNN auc: 0.7880
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 22                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.007126351179569848, 0.013523338109792997, 0.056909448440872]
+States:  [array([0.00712635]), array([0.01352334]), array([0.05690945])]
+Thresholds:  [0.30000000000000004, 0.2, 0.5]
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6364572048187256, time: 1.6948277950286865s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7103
+TRAIN GNN auc: 0.7842
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 23                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.007144737032208223, 0.014789170127831696, 0.041431330276327775]
+States:  [array([0.00714474]), array([0.01478917]), array([0.04143133])]
+Thresholds:  [0.1, 0.7000000000000001, 0.1]
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6256258487701416, time: 1.6031293869018555s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7027
+TRAIN GNN auc: 0.7797
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 24                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.007729172879584023, 0.04479113831091661, 0.014290950060300026]
+States:  [array([0.00772917]), array([0.04479114]), array([0.01429095])]
+Thresholds:  [1, 0.6000000000000001, 0.2]
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.7977497777124267
+Thresholds to obtain the historical maximum AUC:  [0.8, 0.9, 0.9]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6427644888559977, time: 1.4086110591888428s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6769
+TEST GNN Accuracy: 0.8044
+TEST GNN Recall: 0.7231
+TEST GNN auc: 0.8074
+TEST GNN ap: 0.4796
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5565
+TEST Label1 Accuracy: 0.6351
+TEST Label1 Recall: 0.6784
+TEST Label1 auc: 0.7371
+TEST Label1 ap: 0.3201
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7248
+TRAIN GNN auc: 0.8055
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 25                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.012934447652035034, 0.04608435545937328, 0.01683216888353323]
+States:  [array([0.01293445]), array([0.04608436]), array([0.01683217])]
+Thresholds:  [0.1, 0.7000000000000001, 0.6000000000000001]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6367634137471517, time: 1.5269594192504883s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.6981
+TRAIN GNN auc: 0.7837
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 26                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.008618573999068882, 0.051607228173266205, 0.04251098808598935]
+States:  [array([0.00861857]), array([0.05160723]), array([0.04251099])]
+Thresholds:  [0.7000000000000001, 0.6000000000000001, 0.1]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6329602003097534, time: 1.620744228363037s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7209
+TRAIN GNN auc: 0.8020
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 27                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.013154531943521673, 0.04844271950162304, 0.016915601187401434]
+States:  [array([0.01315453]), array([0.04844272]), array([0.0169156])]
+Thresholds:  [0.30000000000000004, 0.1, 0.9]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6150501569112142, time: 1.722635269165039s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.5942
+TEST GNN Accuracy: 0.6804
+TEST GNN Recall: 0.7125
+TEST GNN auc: 0.7897
+TEST GNN ap: 0.4361
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.6070
+TEST Label1 Accuracy: 0.7305
+TEST Label1 Recall: 0.6707
+TEST Label1 auc: 0.7385
+TEST Label1 ap: 0.3223
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7138
+TRAIN GNN auc: 0.7941
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 28                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.009340064437850492, 0.01490048001110971, 0.061318553448733215]
+States:  [array([0.00934006]), array([0.01490048]), array([0.06131855])]
+Thresholds:  [0.6000000000000001, 0.2, 0.1]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.625843365987142, time: 1.562246322631836s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7186
+TRAIN GNN auc: 0.8001
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 29                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.012712498784965422, 0.016129668492191218, 0.021405310351728504]
+States:  [array([0.0127125]), array([0.01612967]), array([0.02140531])]
+Thresholds:  [0.30000000000000004, 0.2, 0.7000000000000001]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6169324715932211, time: 1.478428602218628s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7144
+TRAIN GNN auc: 0.7934
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 30                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.009928638775823296, 0.017738365400066652, 0.05091344337143894]
+States:  [array([0.00992864]), array([0.01773837]), array([0.05091344])]
+Thresholds:  [0.6000000000000001, 0.7000000000000001, 0.4]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.624996026357015, time: 1.5076560974121094s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6276
+TEST GNN Accuracy: 0.7278
+TEST GNN Recall: 0.7252
+TEST GNN auc: 0.8012
+TEST GNN ap: 0.4630
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5498
+TEST Label1 Accuracy: 0.6226
+TEST Label1 Recall: 0.6802
+TEST Label1 auc: 0.7400
+TEST Label1 ap: 0.3240
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7270
+TRAIN GNN auc: 0.8034
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 31                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.013400627705001382, 0.05218543567351969, 0.04086285057708384]
+States:  [array([0.01340063]), array([0.05218544]), array([0.04086285])]
+Thresholds:  [0.1, 0.5, 0.7000000000000001]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6495261987050375, time: 1.5487604141235352s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7104
+TRAIN GNN auc: 0.7879
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 32                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.009935935535799323, 0.04570305897740889, 0.05730437963525342]
+States:  [array([0.00993594]), array([0.04570306]), array([0.05730438])]
+Thresholds:  [0.4, 0.5, 0.4]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6674094994862875, time: 1.7070975303649902s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7164
+TRAIN GNN auc: 0.7935
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 33                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.011238772419991596, 0.043584114132456886, 0.04199856644376437]
+States:  [array([0.01123877]), array([0.04358411]), array([0.04199857])]
+Thresholds:  [0.30000000000000004, 0.30000000000000004, 0.1]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6308361689249674, time: 1.5639653205871582s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6299
+TEST GNN Accuracy: 0.7421
+TEST GNN Recall: 0.7084
+TEST GNN auc: 0.7875
+TEST GNN ap: 0.4270
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.6061
+TEST Label1 Accuracy: 0.7268
+TEST Label1 Recall: 0.6734
+TEST Label1 auc: 0.7411
+TEST Label1 ap: 0.3249
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7091
+TRAIN GNN auc: 0.7883
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 34                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.009608259760238826, 0.031940329583140394, 0.01713925118573531]
+States:  [array([0.00960826]), array([0.03194033]), array([0.01713925])]
+Thresholds:  [0.1, 0.1, 0.6000000000000001]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6104991436004639, time: 1.6961097717285156s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7067
+TRAIN GNN auc: 0.7886
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 35                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.00903672669555203, 0.012680627228399787, 0.04819518982033614]
+States:  [array([0.00903673]), array([0.01268063]), array([0.04819519])]
+Thresholds:  [0.30000000000000004, 0.30000000000000004, 0.9]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6174947420756022, time: 1.7767815589904785s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7104
+TRAIN GNN auc: 0.7947
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 36                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.008930321593079533, 0.02646077020642422, 0.07970046775182192]
+States:  [array([0.00893032]), array([0.02646077]), array([0.07970047])]
+Thresholds:  [0.2, 0.2, 0.7000000000000001]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6482352415720621, time: 1.5240111351013184s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6157
+TEST GNN Accuracy: 0.7164
+TEST GNN Recall: 0.7123
+TEST GNN auc: 0.7897
+TEST GNN ap: 0.4325
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5831
+TEST Label1 Accuracy: 0.6789
+TEST Label1 Recall: 0.6828
+TEST Label1 auc: 0.7421
+TEST Label1 ap: 0.3261
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7106
+TRAIN GNN auc: 0.7888
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 37                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.009018826095633222, 0.0216330466852986, 0.06919168036133534]
+States:  [array([0.00901883]), array([0.02163305]), array([0.06919168])]
+Thresholds:  [0.2, 0.1, 0.30000000000000004]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6451805432637533, time: 1.4185733795166016s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7073
+TRAIN GNN auc: 0.7839
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 38                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.009045375917334099, 0.01180342966494649, 0.038069486727361775]
+States:  [array([0.00904538]), array([0.01180343]), array([0.03806949])]
+Thresholds:  [0.1, 0.8, 0.7000000000000001]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6305572986602783, time: 1.7668819427490234s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7078
+TRAIN GNN auc: 0.7855
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 39                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.00945896246816673, 0.06356603610762852, 0.0612261203499061]
+States:  [array([0.00945896]), array([0.06356604]), array([0.06122612])]
+Thresholds:  [0.4, 0.6000000000000001, 0.7000000000000001]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6030679146448771, time: 1.8194043636322021s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.5801
+TEST GNN Accuracy: 0.6593
+TEST GNN Recall: 0.7081
+TEST GNN auc: 0.7923
+TEST GNN ap: 0.4399
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5665
+TEST Label1 Accuracy: 0.6491
+TEST Label1 Recall: 0.6844
+TEST Label1 auc: 0.7436
+TEST Label1 ap: 0.3286
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7060
+TRAIN GNN auc: 0.7925
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 40                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.013454764106309374, 0.06209827023138501, 0.07017802869409522]
+States:  [array([0.01345476]), array([0.06209827]), array([0.07017803])]
+Thresholds:  [0.1, 0.7000000000000001, 0.4]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6292279561360677, time: 1.726128339767456s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7075
+TRAIN GNN auc: 0.7860
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 41                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.009858301758284208, 0.06654494493265868, 0.04739886535885102]
+States:  [array([0.0098583]), array([0.06654494]), array([0.04739887])]
+Thresholds:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805516902315723
+Thresholds to obtain the historical maximum AUC:  [1, 0.6000000000000001, 0.2]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6149734656016032, time: 1.6902706623077393s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7195
+TRAIN GNN auc: 0.8058
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 42                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.016734244631314992, 0.06985197525373503, 0.036449213091932865]
+States:  [array([0.01673424]), array([0.06985198]), array([0.03644921])]
+Thresholds:  [0.1, 0.1, 0.4]
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6110069354375204, time: 1.4381446838378906s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6370
+TEST GNN Accuracy: 0.7549
+TEST GNN Recall: 0.7068
+TEST GNN auc: 0.7877
+TEST GNN ap: 0.4248
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.6075
+TEST Label1 Accuracy: 0.7255
+TEST Label1 Recall: 0.6784
+TEST Label1 auc: 0.7445
+TEST Label1 ap: 0.3297
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7063
+TRAIN GNN auc: 0.7876
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 43                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.01108465935373752, 0.020734475451419782, 0.04274302611793404]
+States:  [array([0.01108466]), array([0.02073448]), array([0.04274303])]
+Thresholds:  [0.7000000000000001, 0.5, 0.1]
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.5960988203684489, time: 1.5892510414123535s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7133
+TRAIN GNN auc: 0.8020
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 44                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.017115536003031076, 0.04419385287934859, 0.018849602655925887]
+States:  [array([0.01711554]), array([0.04419385]), array([0.0188496])]
+Thresholds:  [0.30000000000000004, 0.2, 0.2]
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6342617670694987, time: 1.5782809257507324s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7117
+TRAIN GNN auc: 0.7933
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 45                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.011725602933216854, 0.026975592598413967, 0.023531104273992184]
+States:  [array([0.0117256]), array([0.02697559]), array([0.0235311])]
+Thresholds:  [0.1, 0.2, 0.9]
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.623184323310852, time: 1.7310993671417236s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6515
+TEST GNN Accuracy: 0.7851
+TEST GNN Recall: 0.6972
+TEST GNN auc: 0.7911
+TEST GNN ap: 0.4295
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5392
+TEST Label1 Accuracy: 0.6049
+TEST Label1 Recall: 0.6797
+TEST Label1 auc: 0.7455
+TEST Label1 ap: 0.3307
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7051
+TRAIN GNN auc: 0.7965
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 46                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.009973597205275606, 0.022251846655002887, 0.08177157003488393]
+States:  [array([0.0099736]), array([0.02225185]), array([0.08177157])]
+Thresholds:  [0.30000000000000004, 0.2, 0.6000000000000001]
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6220794916152954, time: 1.7238738536834717s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7176
+TRAIN GNN auc: 0.7964
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 47                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.010314634671033955, 0.02264947419848477, 0.06994050493483049]
+States:  [array([0.01031463]), array([0.02264947]), array([0.0699405])]
+Thresholds:  [0.30000000000000004, 0.75, 1]
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6453551848729452, time: 1.6060280799865723s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7135
+TRAIN GNN auc: 0.7994
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 48                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.010689971796820144, 0.06761012808768203, 0.10068107353908295]
+States:  [array([0.01068997]), array([0.06761013]), array([0.10068107])]
+Thresholds:  [0.2, 0.7000000000000001, 0.2]
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6396793127059937, time: 1.6816134452819824s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6519
+TEST GNN Accuracy: 0.7865
+TEST GNN Recall: 0.6961
+TEST GNN auc: 0.7880
+TEST GNN ap: 0.4214
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.6038
+TEST Label1 Accuracy: 0.7156
+TEST Label1 Recall: 0.6829
+TEST Label1 auc: 0.7464
+TEST Label1 ap: 0.3320
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.6955
+TRAIN GNN auc: 0.7880
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 49                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.010204513559879225, 0.07402986570729035, 0.039898138941360184]
+States:  [array([0.01020451]), array([0.07402987]), array([0.03989814])]
+Thresholds:  [0.30000000000000004, 0.66, 0.4]
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6132316986719767, time: 1.72648024559021s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7189
+TRAIN GNN auc: 0.7956
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 50                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.010583309452182338, 0.07023244376917394, 0.0438143117689731]
+States:  [array([0.01058331]), array([0.07023244]), array([0.04381431])]
+Thresholds:  [0.30000000000000004, 0.66, 0.2]
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6480223337809244, time: 1.7024695873260498s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7187
+TRAIN GNN auc: 0.7973
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 51                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.011672487374951952, 0.06992465163208282, 0.0293465975525833]
+States:  [array([0.01167249]), array([0.06992465]), array([0.0293466])]
+Thresholds:  [0.9, 0.68, 0.1]
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.805815498096942
+Thresholds to obtain the historical maximum AUC:  [0.7000000000000001, 0.7000000000000001, 0.30000000000000004]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.5911019245783488, time: 1.3932368755340576s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6724
+TEST GNN Accuracy: 0.7906
+TEST GNN Recall: 0.7346
+TEST GNN auc: 0.8132
+TEST GNN ap: 0.4897
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5935
+TEST Label1 Accuracy: 0.6950
+TEST Label1 Recall: 0.6866
+TEST Label1 auc: 0.7475
+TEST Label1 ap: 0.3342
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7364
+TRAIN GNN auc: 0.8148
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 52                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.0176100584359855, 0.07230356301376804, 0.01675579115305661]
+States:  [array([0.01761006]), array([0.07230356]), array([0.01675579])]
+Thresholds:  [0.30000000000000004, 0.75, 0.2]
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6297805309295654, time: 1.4265995025634766s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7196
+TRAIN GNN auc: 0.7991
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 53                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.012062069652855353, 0.0783457578767514, 0.025011436810111587]
+States:  [array([0.01206207]), array([0.07834576]), array([0.02501144])]
+Thresholds:  [0.30000000000000004, 0.73, 0.2]
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6311173439025879, time: 1.655320644378662s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7193
+TRAIN GNN auc: 0.7984
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 54                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.010532847712049558, 0.07832528393472471, 0.02656945511381353]
+States:  [array([0.01053285]), array([0.07832528]), array([0.02656946])]
+Thresholds:  [0.30000000000000004, 0.6900000000000001, 0.4]
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [0, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6309910615285238, time: 1.7075834274291992s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6133
+TEST GNN Accuracy: 0.7083
+TEST GNN Recall: 0.7190
+TEST GNN auc: 0.7943
+TEST GNN ap: 0.4361
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5754
+TEST Label1 Accuracy: 0.6622
+TEST Label1 Recall: 0.6881
+TEST Label1 auc: 0.7484
+TEST Label1 ap: 0.3358
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7223
+TRAIN GNN auc: 0.7994
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 55                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.010421814004719207, 0.07477505421707492, 0.04391201369026961]
+States:  [array([0.01042181]), array([0.07477505]), array([0.04391201])]
+Thresholds:  [0.9199999999999999, 0.7100000000000001, 0.1]
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8147842029140584
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.68, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6212375164031982, time: 1.6228768825531006s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7462
+TRAIN GNN auc: 0.8187
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 56                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.01809448492275419, 0.07664862472014672, 0.020540607454253235]
+States:  [array([0.01809448]), array([0.07664862]), array([0.02054061])]
+Thresholds:  [0.94, 0.6900000000000001, 0.1]
+Historical maximum AUC:  0.8186526739687727
+Thresholds to obtain the historical maximum AUC:  [0.9199999999999999, 0.7100000000000001, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8186526739687727
+Thresholds to obtain the historical maximum AUC:  [0.9199999999999999, 0.7100000000000001, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8186526739687727
+Thresholds to obtain the historical maximum AUC:  [0.9199999999999999, 0.7100000000000001, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8186526739687727
+Thresholds to obtain the historical maximum AUC:  [0.9199999999999999, 0.7100000000000001, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8186526739687727
+Thresholds to obtain the historical maximum AUC:  [0.9199999999999999, 0.7100000000000001, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8186526739687727
+Thresholds to obtain the historical maximum AUC:  [0.9199999999999999, 0.7100000000000001, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6082217693328857, time: 1.5914320945739746s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7382
+TRAIN GNN auc: 0.8201
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 57                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.020020127208157816, 0.07561100024908607, 0.014818072986932947]
+States:  [array([0.02002013]), array([0.075611]), array([0.01481807])]
+Thresholds:  [0.86, 0.72, 0.4]
+Historical maximum AUC:  0.8200724427515662
+Thresholds to obtain the historical maximum AUC:  [0.94, 0.6900000000000001, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8200724427515662
+Thresholds to obtain the historical maximum AUC:  [0.94, 0.6900000000000001, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8200724427515662
+Thresholds to obtain the historical maximum AUC:  [0.94, 0.6900000000000001, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8200724427515662
+Thresholds to obtain the historical maximum AUC:  [0.94, 0.6900000000000001, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8200724427515662
+Thresholds to obtain the historical maximum AUC:  [0.94, 0.6900000000000001, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8200724427515662
+Thresholds to obtain the historical maximum AUC:  [0.94, 0.6900000000000001, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6209485530853271, time: 1.4852373600006104s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6437
+TEST GNN Accuracy: 0.7436
+TEST GNN Recall: 0.7421
+TEST GNN auc: 0.8177
+TEST GNN ap: 0.4964
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.6177
+TEST Label1 Accuracy: 0.7438
+TEST Label1 Recall: 0.6781
+TEST Label1 auc: 0.7490
+TEST Label1 ap: 0.3370
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7427
+TRAIN GNN auc: 0.8210
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 58                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.020166429971194746, 0.0784814397182531, 0.04417752957015094]
+States:  [array([0.02016643]), array([0.07848144]), array([0.04417753])]
+Thresholds:  [0.86, 0.7100000000000001, 0.1]
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6115954717000326, time: 1.4162302017211914s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7298
+TRAIN GNN auc: 0.8104
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 59                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.020073255253433214, 0.07811829111815839, 0.020402528110381988]
+States:  [array([0.02007326]), array([0.07811829]), array([0.02040253])]
+Thresholds:  [0.9199999999999999, 0.68, 0.4]
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6152178446451823, time: 1.4811923503875732s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7406
+TRAIN GNN auc: 0.8193
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 60                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.020724721705327697, 0.07589625917959332, 0.04286165484083506]
+States:  [array([0.02072472]), array([0.07589626]), array([0.04286165])]
+Thresholds:  [0.9, 0.74, 0.1]
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8209746884101368
+Thresholds to obtain the historical maximum AUC:  [0.86, 0.72, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6286088625590006, time: 1.628218412399292s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6671
+TEST GNN Accuracy: 0.7784
+TEST GNN Recall: 0.7424
+TEST GNN auc: 0.8201
+TEST GNN ap: 0.4980
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5680
+TEST Label1 Accuracy: 0.6501
+TEST Label1 Recall: 0.6871
+TEST Label1 auc: 0.7497
+TEST Label1 ap: 0.3383
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7462
+TRAIN GNN auc: 0.8228
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 61                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.02045896665579318, 0.08001743272644771, 0.020683191571298467]
+States:  [array([0.02045897]), array([0.08001743]), array([0.02068319])]
+Thresholds:  [0.89, 0.67, 0.8]
+Historical maximum AUC:  0.8227909167017982
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.74, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8227909167017982
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.74, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8227909167017982
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.74, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8227909167017982
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.74, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8227909167017982
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.74, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8227909167017982
+Thresholds to obtain the historical maximum AUC:  [0.9, 0.74, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6160359382629395, time: 1.780357837677002s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7458
+TRAIN GNN auc: 0.8250
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 62                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.019850511812550223, 0.07747940438238622, 0.07886183779542993]
+States:  [array([0.01985051]), array([0.0774794]), array([0.07886184])]
+Thresholds:  [0.94, 0.6900000000000001, 0.4]
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.5924214919408163, time: 1.7387022972106934s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7424
+TRAIN GNN auc: 0.8229
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 63                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.020739166177057938, 0.07764155783330828, 0.05734837661957768]
+States:  [array([0.02073917]), array([0.07764156]), array([0.05734838])]
+Thresholds:  [0.94, 0.72, 0.30000000000000004]
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6215798854827881, time: 1.4850819110870361s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6694
+TEST GNN Accuracy: 0.7817
+TEST GNN Recall: 0.7423
+TEST GNN auc: 0.8216
+TEST GNN ap: 0.5028
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.6009
+TEST Label1 Accuracy: 0.7062
+TEST Label1 Recall: 0.6889
+TEST Label1 auc: 0.7501
+TEST Label1 ap: 0.3390
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7480
+TRAIN GNN auc: 0.8235
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 64                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.020001246629405924, 0.07919952115376289, 0.04068951290713783]
+States:  [array([0.02000125]), array([0.07919952]), array([0.04068951])]
+Thresholds:  [0.89, 0.67, 0.7000000000000001]
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.618582566579183, time: 1.5696792602539062s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7480
+TRAIN GNN auc: 0.8247
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 65                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.01988180245623248, 0.0760160024386435, 0.07364065298179401]
+States:  [array([0.0198818]), array([0.076016]), array([0.07364065])]
+Thresholds:  [0.95, 0.72, 0.2]
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6256040732065836, time: 1.683903455734253s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7498
+TRAIN GNN auc: 0.8248
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 66                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.020457519418583803, 0.08059724981358421, 0.03660105117348014]
+States:  [array([0.02045752]), array([0.08059725]), array([0.03660105])]
+Thresholds:  [0.89, 0.73, 0.7000000000000001]
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6036537090937296, time: 1.7731378078460693s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6631
+TEST GNN Accuracy: 0.7733
+TEST GNN Recall: 0.7409
+TEST GNN auc: 0.8205
+TEST GNN ap: 0.5006
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5822
+TEST Label1 Accuracy: 0.6720
+TEST Label1 Recall: 0.6914
+TEST Label1 auc: 0.7505
+TEST Label1 ap: 0.3396
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7499
+TRAIN GNN auc: 0.8237
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 67                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.020360500115612506, 0.08212258397336633, 0.07212979742290243]
+States:  [array([0.0203605]), array([0.08212258]), array([0.0721298])]
+Thresholds:  [0.95, 0.73, 0.4]
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8250412343150527
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.67, 0.8]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6109172900517782, time: 1.7428529262542725s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7498
+TRAIN GNN auc: 0.8255
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 68                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.020570326610089316, 0.08345194737404887, 0.0565566483288279]
+States:  [array([0.02057033]), array([0.08345195]), array([0.05655665])]
+Thresholds:  [0.87, 0.67, 0.6000000000000001]
+Historical maximum AUC:  0.8255130964378938
+Thresholds to obtain the historical maximum AUC:  [0.95, 0.73, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8255130964378938
+Thresholds to obtain the historical maximum AUC:  [0.95, 0.73, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8255130964378938
+Thresholds to obtain the historical maximum AUC:  [0.95, 0.73, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8255130964378938
+Thresholds to obtain the historical maximum AUC:  [0.95, 0.73, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8255130964378938
+Thresholds to obtain the historical maximum AUC:  [0.95, 0.73, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8255130964378938
+Thresholds to obtain the historical maximum AUC:  [0.95, 0.73, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.5980804363886515, time: 1.770153284072876s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7492
+TRAIN GNN auc: 0.8252
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 69                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.021493403089333233, 0.07857535622296093, 0.06857801735600814]
+States:  [array([0.0214934]), array([0.07857536]), array([0.06857802])]
+Thresholds:  [0.91, 0.66, 0.1]
+Historical maximum AUC:  0.8255130964378938
+Thresholds to obtain the historical maximum AUC:  [0.95, 0.73, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8255130964378938
+Thresholds to obtain the historical maximum AUC:  [0.95, 0.73, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8255130964378938
+Thresholds to obtain the historical maximum AUC:  [0.95, 0.73, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8255130964378938
+Thresholds to obtain the historical maximum AUC:  [0.95, 0.73, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8255130964378938
+Thresholds to obtain the historical maximum AUC:  [0.95, 0.73, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8255130964378938
+Thresholds to obtain the historical maximum AUC:  [0.95, 0.73, 0.4]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6012957096099854, time: 1.408869743347168s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6629
+TEST GNN Accuracy: 0.7702
+TEST GNN Recall: 0.7459
+TEST GNN auc: 0.8239
+TEST GNN ap: 0.5036
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.6050
+TEST Label1 Accuracy: 0.7128
+TEST Label1 Recall: 0.6898
+TEST Label1 auc: 0.7513
+TEST Label1 ap: 0.3405
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7529
+TRAIN GNN auc: 0.8270
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 70                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.020247677577744677, 0.0769782753902326, 0.024882241685960284]
+States:  [array([0.02024768]), array([0.07697828]), array([0.02488224])]
+Thresholds:  [0.9299999999999999, 0.66, 0.1]
+Historical maximum AUC:  0.8269777874480386
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.66, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8269777874480386
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.66, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8269777874480386
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.66, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8269777874480386
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.66, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8269777874480386
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.66, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8269777874480386
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.66, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6119635899861654, time: 1.3756015300750732s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7454
+TRAIN GNN auc: 0.8243
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 71                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.022247692431225524, 0.076504867311353, 0.01568667019755576]
+States:  [array([0.02224769]), array([0.07650487]), array([0.01568667])]
+Thresholds:  [0.91, 0.73, 0.30000000000000004]
+Historical maximum AUC:  0.8269777874480386
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.66, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8269777874480386
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.66, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8269777874480386
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.66, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8269777874480386
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.66, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8269777874480386
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.66, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8269777874480386
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.66, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6444217363993326, time: 1.461181879043579s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7485
+TRAIN GNN auc: 0.8270
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 72                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.02066766170682163, 0.08313954749957395, 0.03701332235379024]
+States:  [array([0.02066766]), array([0.08313955]), array([0.03701332])]
+Thresholds:  [0.89, 0.73, 0.1]
+Historical maximum AUC:  0.8270149406323573
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8270149406323573
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8270149406323573
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8270149406323573
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8270149406323573
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8270149406323573
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6243111292521158, time: 1.6167807579040527s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6469
+TEST GNN Accuracy: 0.7463
+TEST GNN Recall: 0.7458
+TEST GNN auc: 0.8219
+TEST GNN ap: 0.5010
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.6102
+TEST Label1 Accuracy: 0.7232
+TEST Label1 Recall: 0.6879
+TEST Label1 auc: 0.7517
+TEST Label1 ap: 0.3411
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7487
+TRAIN GNN auc: 0.8265
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 73                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.021974657417356852, 0.08464080576834215, 0.02047430271626037]
+States:  [array([0.02197466]), array([0.08464081]), array([0.0204743])]
+Thresholds:  [0.89, 0.73, 0.2]
+Historical maximum AUC:  0.8270149406323573
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8270149406323573
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8270149406323573
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8270149406323573
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8270149406323573
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8270149406323573
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6028360525767008, time: 1.6302886009216309s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7470
+TRAIN GNN auc: 0.8275
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 74                                               
++------------------------------------------------------------------------------------------+
+
+Relation 2 is complete ！！！！!
+Rewards:  [0.02118271714311301, 0.08591839763741188, 0.02705058434668199]
+States:  [array([0.02118272]), array([0.0859184]), array([0.02705058])]
+Thresholds:  [0.94, 0.73, 0.2]
+Historical maximum AUC:  0.8275009705345935
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8275009705345935
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8275009705345935
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8275009705345935
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8275009705345935
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8275009705345935
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6137084166208903, time: 1.436136245727539s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7524
+TRAIN GNN auc: 0.8285
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 75                                               
++------------------------------------------------------------------------------------------+
+
+Relation 2 is complete ！！！！!
+Rewards:  [0.021474121868734045, 0.08464956998058047, 0.029530352398327377]
+States:  [array([0.02147412]), array([0.08464957]), array([0.02953035])]
+Thresholds:  [0.91, 0.73, 0.1]
+Historical maximum AUC:  0.8285188343289703
+Thresholds to obtain the historical maximum AUC:  [0.94, 0.73, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8285188343289703
+Thresholds to obtain the historical maximum AUC:  [0.94, 0.73, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8285188343289703
+Thresholds to obtain the historical maximum AUC:  [0.94, 0.73, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8285188343289703
+Thresholds to obtain the historical maximum AUC:  [0.94, 0.73, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8285188343289703
+Thresholds to obtain the historical maximum AUC:  [0.94, 0.73, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8285188343289703
+Thresholds to obtain the historical maximum AUC:  [0.94, 0.73, 0.2]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.5868948300679525, time: 1.6073634624481201s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6223
+TEST GNN Accuracy: 0.7072
+TEST GNN Recall: 0.7478
+TEST GNN auc: 0.8244
+TEST GNN ap: 0.5019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5905
+TEST Label1 Accuracy: 0.6866
+TEST Label1 Recall: 0.6912
+TEST Label1 auc: 0.7522
+TEST Label1 ap: 0.3414
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7477
+TRAIN GNN auc: 0.8295
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 76                                               
++------------------------------------------------------------------------------------------+
+
+Relation 2 is complete ！！！！!
+Rewards:  [0.02126548653349547, 0.08532393493950051, 0.018170430664910128]
+States:  [array([0.02126549]), array([0.08532393]), array([0.01817043])]
+Thresholds:  [0.89, 0.73, 0.1]
+Historical maximum AUC:  0.8294626539003336
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8294626539003336
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8294626539003336
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8294626539003336
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8294626539003336
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8294626539003336
+Thresholds to obtain the historical maximum AUC:  [0.91, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6052760283152262, time: 1.5933775901794434s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7563
+TRAIN GNN auc: 0.8308
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 77                                               
++------------------------------------------------------------------------------------------+
+
+Relation 2 is complete ！！！！!
+Rewards:  [0.021752489523181612, 0.0839158714895313, 0.01576722847827616]
+States:  [array([0.02175249]), array([0.08391587]), array([0.01576723])]
+Thresholds:  [0.89, 0.73, 0.9]
+Historical maximum AUC:  0.8308170769285398
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8308170769285398
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8308170769285398
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8308170769285398
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8308170769285398
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8308170769285398
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.5893868207931519, time: 1.803628921508789s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7513
+TRAIN GNN auc: 0.8315
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 78                                               
++------------------------------------------------------------------------------------------+
+
+Relation 2 is complete ！！！！!
+Rewards:  [0.02272888947544, 0.08668482439086683, 0.09326362127854397]
+States:  [array([0.02272889]), array([0.08668482]), array([0.09326362])]
+Thresholds:  [0.89, 0.73, 0.5]
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.5961111386617025, time: 1.772244930267334s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6957
+TEST GNN Accuracy: 0.8223
+TEST GNN Recall: 0.7353
+TEST GNN auc: 0.8253
+TEST GNN ap: 0.5108
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.6065
+TEST Label1 Accuracy: 0.7157
+TEST Label1 Recall: 0.6895
+TEST Label1 auc: 0.7525
+TEST Label1 ap: 0.3419
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7424
+TRAIN GNN auc: 0.8287
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 79                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.02079253906182574, 0.0862540422769444, 0.07069919242501625]
+States:  [array([0.02079254]), array([0.08625404]), array([0.07069919])]
+Thresholds:  [0.89, 0.73, 0.2]
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6113017400105795, time: 1.6625306606292725s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7474
+TRAIN GNN auc: 0.8290
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 80                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.021471275225604842, 0.08551618293748242, 0.03478597254933152]
+States:  [array([0.02147128]), array([0.08551618]), array([0.03478597])]
+Thresholds:  [0.89, 0.73, 0.30000000000000004]
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8314828314873117
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.9]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6101701259613037, time: 1.6911611557006836s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7536
+TRAIN GNN auc: 0.8319
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 81                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.020764760014821505, 0.08738345850975009, 0.03994217433002045]
+States:  [array([0.02076476]), array([0.08738346]), array([0.03994217])]
+Thresholds:  [0.89, 0.73, 0.1]
+Historical maximum AUC:  0.8319250115761124
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8319250115761124
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8319250115761124
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8319250115761124
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8319250115761124
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8319250115761124
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.30000000000000004]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.5660048325856527, time: 1.6127433776855469s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6634
+TEST GNN Accuracy: 0.7666
+TEST GNN Recall: 0.7537
+TEST GNN auc: 0.8301
+TEST GNN ap: 0.5127
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.6013
+TEST Label1 Accuracy: 0.7046
+TEST Label1 Recall: 0.6925
+TEST Label1 auc: 0.7527
+TEST Label1 ap: 0.3418
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7614
+TRAIN GNN auc: 0.8341
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 82                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.020819647514875216, 0.08819171627563849, 0.020595128865695884]
+States:  [array([0.02081965]), array([0.08819172]), array([0.02059513])]
+Thresholds:  [0.89, 0.73, 0.1]
+Historical maximum AUC:  0.8340860447730426
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8340860447730426
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8340860447730426
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8340860447730426
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8340860447730426
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8340860447730426
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6074438889821371, time: 1.6470072269439697s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7597
+TRAIN GNN auc: 0.8342
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 83                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.022148934396888236, 0.08684794478847523, 0.016363285592248148]
+States:  [array([0.02214893]), array([0.08684794]), array([0.01636329])]
+Thresholds:  [0.89, 0.73, 0.1]
+Historical maximum AUC:  0.834234788583129
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.834234788583129
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.834234788583129
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.834234788583129
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.834234788583129
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.834234788583129
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.588109016418457, time: 1.5947973728179932s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7626
+TRAIN GNN auc: 0.8349
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 84                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.02152073132879472, 0.08699513756837922, 0.016687183027131614]
+States:  [array([0.02152073]), array([0.08699514]), array([0.01668718])]
+Thresholds:  [0.89, 0.73, 0.08]
+Historical maximum AUC:  0.8348535475809798
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8348535475809798
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8348535475809798
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8348535475809798
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8348535475809798
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8348535475809798
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.613143523534139, time: 1.3668491840362549s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6588
+TEST GNN Accuracy: 0.7604
+TEST GNN Recall: 0.7528
+TEST GNN auc: 0.8291
+TEST GNN ap: 0.5110
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.6119
+TEST Label1 Accuracy: 0.7262
+TEST Label1 Recall: 0.6881
+TEST Label1 auc: 0.7532
+TEST Label1 ap: 0.3423
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7617
+TRAIN GNN auc: 0.8345
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 85                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.022397405053717016, 0.08756710115940573, 0.014165022074521532]
+States:  [array([0.02239741]), array([0.0875671]), array([0.01416502])]
+Thresholds:  [0.89, 0.73, 0.13]
+Historical maximum AUC:  0.8348535475809798
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8348535475809798
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8348535475809798
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8348535475809798
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8348535475809798
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8348535475809798
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.1]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6140768130620321, time: 1.39286470413208s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7545
+TRAIN GNN auc: 0.8361
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 86                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.022017224874599797, 0.08702202590037979, 0.01908722293124275]
+States:  [array([0.02201722]), array([0.08702203]), array([0.01908722])]
+Thresholds:  [0.89, 0.73, 0.09]
+Historical maximum AUC:  0.8361201160780822
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.13]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8361201160780822
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.13]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8361201160780822
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.13]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8361201160780822
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.13]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8361201160780822
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.13]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8361201160780822
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.13]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6083567142486572, time: 1.6814889907836914s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7597
+TRAIN GNN auc: 0.8369
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 87                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.02317027319052163, 0.08844096900893017, 0.016883978122097645]
+States:  [array([0.02317027]), array([0.08844097]), array([0.01688398])]
+Thresholds:  [0.89, 0.73, 0.06]
+Historical maximum AUC:  0.8369142147511248
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.09]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8369142147511248
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.09]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8369142147511248
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.09]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8369142147511248
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.09]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8369142147511248
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.09]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8369142147511248
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.09]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.596947431564331, time: 1.5710210800170898s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6828
+TEST GNN Accuracy: 0.7969
+TEST GNN Recall: 0.7485
+TEST GNN auc: 0.8288
+TEST GNN ap: 0.5126
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5764
+TEST Label1 Accuracy: 0.6617
+TEST Label1 Recall: 0.6920
+TEST Label1 auc: 0.7535
+TEST Label1 ap: 0.3431
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7603
+TRAIN GNN auc: 0.8343
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 88                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.021263965810683655, 0.0885250475088386, 0.01132009303011941]
+States:  [array([0.02126397]), array([0.08852505]), array([0.01132009])]
+Thresholds:  [0.89, 0.73, 0.12]
+Historical maximum AUC:  0.8369142147511248
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.09]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8369142147511248
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.09]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8369142147511248
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.09]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8369142147511248
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.09]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8369142147511248
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.09]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8369142147511248
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.09]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6054534912109375, time: 1.5968127250671387s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7642
+TRAIN GNN auc: 0.8370
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 89                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.02154893904973625, 0.08867259450588172, 0.018406626375099256]
+States:  [array([0.02154894]), array([0.08867259]), array([0.01840663])]
+Thresholds:  [0.89, 0.73, 0.08]
+Historical maximum AUC:  0.8370128529999349
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.12]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8370128529999349
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.12]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8370128529999349
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.12]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8370128529999349
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.12]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8370128529999349
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.12]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8370128529999349
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.12]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6323153972625732, time: 1.5908737182617188s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7639
+TRAIN GNN auc: 0.8385
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 90                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.02316480286924852, 0.08758783194112635, 0.01455084039395912]
+States:  [array([0.0231648]), array([0.08758783]), array([0.01455084])]
+Thresholds:  [0.89, 0.73, 0.15000000000000002]
+Historical maximum AUC:  0.8385165441294751
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.08]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8385165441294751
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.08]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8385165441294751
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.08]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8385165441294751
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.08]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8385165441294751
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.08]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8385165441294751
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.08]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6044526894887289, time: 1.4033265113830566s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6887
+TEST GNN Accuracy: 0.7994
+TEST GNN Recall: 0.7588
+TEST GNN auc: 0.8336
+TEST GNN ap: 0.5224
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.5791
+TEST Label1 Accuracy: 0.6664
+TEST Label1 Recall: 0.6920
+TEST Label1 auc: 0.7535
+TEST Label1 ap: 0.3429
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7656
+TRAIN GNN auc: 0.8387
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 91                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.022347257649966864, 0.08929993261137219, 0.02207533897947569]
+States:  [array([0.02234726]), array([0.08929993]), array([0.02207534])]
+Thresholds:  [0.89, 0.73, 0.15000000000000002]
+Historical maximum AUC:  0.8386703640320952
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.15000000000000002]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8386703640320952
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.15000000000000002]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8386703640320952
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.15000000000000002]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8386703640320952
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.15000000000000002]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8386703640320952
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.15000000000000002]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8386703640320952
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.15000000000000002]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.603627602259318, time: 1.410520076751709s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7611
+TRAIN GNN auc: 0.8381
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 92                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Rewards:  [0.021476994568946098, 0.08945700576277076, 0.02434263123998905]
+States:  [array([0.02147699]), array([0.08945701]), array([0.02434263])]
+Thresholds:  [0.89, 0.73, 0.15000000000000002]
+Historical maximum AUC:  0.8386703640320952
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.15000000000000002]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8386703640320952
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.15000000000000002]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8386703640320952
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.15000000000000002]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8386703640320952
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.15000000000000002]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8386703640320952
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.15000000000000002]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+Historical maximum AUC:  0.8386703640320952
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.15000000000000002]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6040872732798258, time: 1.411175012588501s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.7656
+TRAIN GNN auc: 0.8406
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 93                                               
++------------------------------------------------------------------------------------------+
+
+Relation 1 is complete ！！！！!
+Relation 2 is complete ！！！！!
+Relation 3 is complete ！！！！!
+Rewards:  [0.021050895049064836, 0.08862359806378882, 0.023577698398862378]
+States:  [array([0.0210509]), array([0.0886236]), array([0.0235777])]
+Thresholds:  [0.89, 0.73, 0.15000000000000002]
+Historical maximum AUC:  0.8406091573185934
+Thresholds to obtain the historical maximum AUC:  [0.89, 0.73, 0.15000000000000002]
+Current depth of each RL Tree:  [1, 1, 1]
+Completion flag of the entire RL Forest:  False
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 0.6158961455027262, time: 1.6245143413543701s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.6761
+TEST GNN Accuracy: 0.7819
+TEST GNN Recall: 0.7589
+TEST GNN auc: 0.8347
+TEST GNN ap: 0.5222
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.6073
+TEST Label1 Accuracy: 0.7167
+TEST Label1 Recall: 0.6900
+TEST Label1 auc: 0.7537
+TEST Label1 ap: 0.3431
+
++------------------------------------------------------------------------------------------+
+
+Total time spent:  960.7326533794403
+Total epoch:  93

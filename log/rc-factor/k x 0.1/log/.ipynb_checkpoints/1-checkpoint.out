@@ -1,0 +1,25 @@
+nohup: ignoring input
+
++------------------------------------------------------------------------------------------+
+* Training and testing RIO-GNN *
+* Paper: Reinforced Neighborhood Selection Guided Multi-Relational Graph Neural Networks *
+* Source: https://github.com/safe-graph/RioGNN *
+
++------------------------------------------------------------------------------------------+
+
+Log save path: ./log/amazon/
+CUDA:  True
+Running on:  amazon
+The number of relations:  3
+Width of each relation tree:  [10, 10, 10]
+Height of each relation tree:  [2, 3, 3]
+Model:  RIO, Inter-AGG:  GNN, feat_size:  25, emb_size:  25.
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 0                                               
++------------------------------------------------------------------------------------------+
+
+Historical maximum AUC:  0
+Thresholds to obtain the historical maximum AUC:  [0, 0, 0]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True

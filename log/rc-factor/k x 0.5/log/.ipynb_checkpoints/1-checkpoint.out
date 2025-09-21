@@ -1,0 +1,72 @@
+nohup: ignoring input
+
++------------------------------------------------------------------------------------------+
+* Training and testing RIO-GNN *
+* Paper: Reinforced Neighborhood Selection Guided Multi-Relational Graph Neural Networks *
+* Source: https://github.com/safe-graph/RioGNN *
+
++------------------------------------------------------------------------------------------+
+
+Log save path: ./log/amazon/
+CUDA:  True
+Running on:  amazon
+The number of relations:  3
+Width of each relation tree:  [10, 10, 10]
+Height of each relation tree:  [2, 3, 3]
+Model:  RIO, Inter-AGG:  GNN, feat_size:  25, emb_size:  25.
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 0                                               
++------------------------------------------------------------------------------------------+
+
+Historical maximum AUC:  0
+Thresholds to obtain the historical maximum AUC:  [0, 0, 0]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 4.142006874084473, time: 0.674027681350708s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST GNN F1: 0.3324
+TEST GNN Accuracy: 0.3773
+TEST GNN Recall: 0.6033
+TEST GNN auc: 0.7421
+TEST GNN ap: 0.1465
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TEST Label1 F1: 0.3243
+TEST Label1 Accuracy: 0.3982
+TEST Label1 Recall: 0.4433
+TEST Label1 auc: 0.4055
+TEST Label1 ap: 0.0530
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.5875
+TRAIN GNN auc: 0.7286
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 1                                               
++------------------------------------------------------------------------------------------+
+
+States:  [array([0.01907974]), array([0.01896111]), array([0.0206296])]
+Thresholds:  [0.1, 0.8, 0.7000000000000001]
+Historical maximum AUC:  0.7286157070100707
+Thresholds to obtain the historical maximum AUC:  [0.5, 0.5, 0.5]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 4.125325679779053, time: 0.6295180320739746s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TRAIN GNN Recall: 0.5985
+TRAIN GNN auc: 0.7418
+
++------------------------------------------------------------------------------------------+
+                                        Epoch 2                                               
++------------------------------------------------------------------------------------------+
+
+Rewards:  [0.017246514244563083, 0.017096102574230894, 0.018996427291380263]
+States:  [array([0.01724651]), array([0.0170961]), array([0.01899643])]
+Thresholds:  [0.4, 0.6000000000000001, 0.7000000000000001]
+Historical maximum AUC:  0.7418305154899155
+Thresholds to obtain the historical maximum AUC:  [0.1, 0.8, 0.7000000000000001]
+Current depth of each RL Tree:  [0, 0, 0]
+Completion flag of the entire RL Forest:  True
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Loss: 4.108200550079346, time: 0.3024423122406006s
